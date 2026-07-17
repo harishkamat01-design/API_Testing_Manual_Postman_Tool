@@ -1,0 +1,244 @@
+{
+  "info": {
+    "_postman_id": "121ddbf4-1d93-4db8-9989-3278a76c02af",
+    "name": "Pet Store XML petmode",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "3390971",
+    "_collection_link": "https://go.postman.co/collection/3390971-121ddbf4-1d93-4db8-9989-3278a76c02af?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Add new pet",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "// ✅ Parse XML response and validate Pet name\r",
+              "const xml2js = require('xml2js');\r",
+              "const parser = new xml2js.Parser({ explicitArray: false });\r",
+              "\r",
+              "pm.test(\"Validate Pet Name as Jimmy\", function () {\r",
+              "    parser.parseString(pm.response.text(), function (err, result) {\r",
+              "        pm.expect(result.Pet.name).to.eql(\"Jimmy\");\r",
+              "    });\r",
+              "});\r",
+              "\r",
+              "//store the Pet ID for later requests\r",
+              "parser.parseString(pm.response.text(), function (err, result) {\r",
+              "    pm.collectionVariables.set(\"petid\", result.Pet.id);\r",
+              "});\r",
+              "\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/xml"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/xml"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<Pet>\r\n\t<id>0</id>\r\n\t<Category>\r\n\t\t<id>0</id>\r\n\t\t<name>Dog</name>\r\n\t</Category>\r\n\t<name>Jimmy</name>\r\n\t<photoUrls>\r\n\t\t<photoUrl>string</photoUrl>\r\n\t</photoUrls>\r\n\t<tags>\r\n\t\t<Tag>\r\n\t\t\t<id>0</id>\r\n\t\t\t<name>string</name>\r\n\t\t</Tag>\r\n\t</tags>\r\n\t<status>available</status>\r\n</Pet>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/pet",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "pet"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get pet by petid generated",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/xml"
+          }
+        ],
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/pet/{{petid}}",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "pet",
+            "{{petid}}"
+          ]
+        },
+        "description": "Generated from cURL: curl -X 'GET' \\\r\n  'https://petstore.swagger.io/v2/pet/9223372036854775807' \\\r\n  -H 'accept: application/xml'"
+      },
+      "response": []
+    },
+    {
+      "name": "Update pet",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "// ✅ Parse XML response and validate Pet name\r",
+              "const xml2js = require('xml2js');\r",
+              "const parser = new xml2js.Parser({ explicitArray: false });\r",
+              "\r",
+              "pm.test(\"Validate Pet Name as Tommy\", function () {\r",
+              "    parser.parseString(pm.response.text(), function (err, result) {\r",
+              "        pm.expect(result.Pet.name).to.eql(\"Tommy\");\r",
+              "    });\r",
+              "});\r",
+              "\r",
+              "//store the Pet ID for later requests\r",
+              "parser.parseString(pm.response.text(), function (err, result) {\r",
+              "    pm.collectionVariables.set(\"petid\", result.Pet.id);\r",
+              "});\r",
+              "\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/xml"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/xml"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<Pet>\r\n\t<id>0</id>\r\n\t<Category>\r\n\t\t<id>0</id>\r\n\t\t<name>string</name>\r\n\t</Category>\r\n\t<name>Tommy</name>\r\n\t<photoUrls>\r\n\t\t<photoUrl>string</photoUrl>\r\n\t</photoUrls>\r\n\t<tags>\r\n\t\t<Tag>\r\n\t\t\t<id>0</id>\r\n\t\t\t<name>string</name>\r\n\t\t</Tag>\r\n\t</tags>\r\n\t<status>available</status>\r\n</Pet>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/pet",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "pet"
+          ]
+        },
+        "description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://petstore.swagger.io/v2/pet' \\\r\n  -H 'accept: application/xml' \\\r\n  -H 'Content-Type: application/xml' \\\r\n  -d '<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<Pet>\r\n\t<id>0</id>\r\n\t<Category>\r\n\t\t<id>0</id>\r\n\t\t<name>string</name>\r\n\t</Category>\r\n\t<name>doggie</name>\r\n\t<photoUrls>\r\n\t\t<photoUrl>string</photoUrl>\r\n\t</photoUrls>\r\n\t<tags>\r\n\t\t<Tag>\r\n\t\t\t<id>0</id>\r\n\t\t\t<name>string</name>\r\n\t\t</Tag>\r\n\t</tags>\r\n\t<status>available</status>\r\n</Pet>'"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete pet",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.collectionVariables.unset(\"petid\");"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/pet/{{petid}}",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "pet",
+            "{{petid}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,644 @@
+{
+  "info": {
+    "_postman_id": "cdbd0336-ec64-4582-852c-8f88d7829dd6",
+    "name": "BooksAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "3390971",
+    "_collection_link": "https://go.postman.co/collection/3390971-cdbd0336-ec64-4582-852c-8f88d7829dd6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "SubmitOrder",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "e47a62baed2fe3c56d338422467f6eba02afa7720d690f28900654e5c2a569d9",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"bookId\":5,\r\n    \"customerName\": \"Harish\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://simple-books-api.glitch.me/orders",
+              "protocol": "https",
+              "host": [
+                "simple-books-api",
+                "glitch",
+                "me"
+              ],
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {},
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {},
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Create Token",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"clientName\": \"Testing\",\r\n \"clientEmail\": \"Testing005@example.com\"\r\n}\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://simple-books-api.glitch.me/api-clients/",
+          "protocol": "https",
+          "host": [
+            "simple-books-api",
+            "glitch",
+            "me"
+          ],
+          "path": [
+            "api-clients",
+            ""
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Create Token",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n \"clientName\": \"Testing\",\r\n \"clientEmail\": \"Testing005@example.com\"\r\n}\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://simple-books-api.glitch.me/api-clients/",
+              "protocol": "https",
+              "host": [
+                "simple-books-api",
+                "glitch",
+                "me"
+              ],
+              "path": [
+                "api-clients",
+                ""
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": ":status",
+              "value": 201
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "82"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 30 Jun 2026 04:29:31 GMT"
+            },
+            {
+              "key": "x-amzn-trace-id",
+              "value": "Root=1-6a43462b-07189d65747c99a251161c56;Parent=78a33ce7d22157f1;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "key": "x-amzn-requestid",
+              "value": "72d3137a-1a91-4843-afc0-b6bf8b90c52e"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "key": "x-amz-apigw-id",
+              "value": "fwfmyEV9oAMEVog="
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "key": "x-cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "key": "via",
+              "value": "1.1 64f492880c21611818d620bbe492a0bc.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "x-amz-cf-pop",
+              "value": "PNQ50-P4"
+            },
+            {
+              "key": "x-amz-cf-id",
+              "value": "PlBVye7X8sTcrb7yEp4vJ2Vs5hQEXZkdQmZI4ICBz21qE0R-DEbU8g=="
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"accessToken\": \"1d929ed9af88e891622cb6e54ffac4b6acc0815d0ba9d48768f61dce14fa8e97\"\n}"
+        },
+        {
+          "name": "Create Token",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n \"clientName\": \"Testing\",\r\n \"clientEmail\": \"Testing0005@example.com\"\r\n}\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://simple-books-api.glitch.me/api-clients/",
+              "protocol": "https",
+              "host": [
+                "simple-books-api",
+                "glitch",
+                "me"
+              ],
+              "path": [
+                "api-clients",
+                ""
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": ":status",
+              "value": 201
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "82"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 30 Jun 2026 09:34:42 GMT"
+            },
+            {
+              "key": "x-amzn-trace-id",
+              "value": "Root=1-6a438db1-7f1d2b72778b12cc388fe459;Parent=5af5a1b141f3e96a;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "key": "x-amzn-requestid",
+              "value": "c415954d-51cb-49f5-838a-fc5bc3ed3df6"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "key": "x-amz-apigw-id",
+              "value": "fxMT3El4IAMEK5Q="
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "key": "x-cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "key": "via",
+              "value": "1.1 76c8b6149bd17b365b0a900e898b9710.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "x-amz-cf-pop",
+              "value": "PNQ50-P4"
+            },
+            {
+              "key": "x-amz-cf-id",
+              "value": "GbG3tEdiq_lTpoHRtZud6Tjwqw6leSIdqiOoAukRE_9urNbf7lN5fw=="
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"accessToken\": \"e47a62baed2fe3c56d338422467f6eba02afa7720d690f28900654e5c2a569d9\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "StatusOfBooks",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://simple-books-api.glitch.me/status",
+          "protocol": "https",
+          "host": [
+            "simple-books-api",
+            "glitch",
+            "me"
+          ],
+          "path": [
+            "status"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "StatusOfBooks",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://simple-books-api.glitch.me/status",
+              "protocol": "https",
+              "host": [
+                "simple-books-api",
+                "glitch",
+                "me"
+              ],
+              "path": [
+                "status"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "15"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 30 Jun 2026 04:30:23 GMT"
+            },
+            {
+              "key": "x-amzn-trace-id",
+              "value": "Root=1-6a43465f-6482188b53ce9d462a9fe053;Parent=060174246d6e572c;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "key": "x-amzn-requestid",
+              "value": "bb56f7c0-cbd9-432a-98a3-10cd75031960"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "key": "x-amz-apigw-id",
+              "value": "fwfu8ELXIAMEMVw="
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "key": "x-cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "key": "via",
+              "value": "1.1 64f492880c21611818d620bbe492a0bc.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "x-amz-cf-pop",
+              "value": "PNQ50-P4"
+            },
+            {
+              "key": "x-amz-cf-id",
+              "value": "4KTlngbuu1kRb_PWO6oYf9nsDy-kwsICw9qUPjWt4IJk0VVcTrle0Q=="
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": \"OK\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "ListsOfBooks",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://simple-books-api.glitch.me/books",
+          "protocol": "https",
+          "host": [
+            "simple-books-api",
+            "glitch",
+            "me"
+          ],
+          "path": [
+            "books"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "ListsOfBooks",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://simple-books-api.glitch.me/books",
+              "protocol": "https",
+              "host": [
+                "simple-books-api",
+                "glitch",
+                "me"
+              ],
+              "path": [
+                "books"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "417"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 30 Jun 2026 04:30:42 GMT"
+            },
+            {
+              "key": "x-amzn-trace-id",
+              "value": "Root=1-6a434672-2e050ea23f51892e202ef3bd;Parent=1efa1c1f4127c36c;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "key": "x-amzn-requestid",
+              "value": "3754a3ac-4c9e-4c97-97af-b68018eae422"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "key": "x-amz-apigw-id",
+              "value": "fwfyBEgcoAMEuNQ="
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "key": "x-cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "key": "via",
+              "value": "1.1 64f492880c21611818d620bbe492a0bc.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "x-amz-cf-pop",
+              "value": "PNQ50-P4"
+            },
+            {
+              "key": "x-amz-cf-id",
+              "value": "CtFKpPJoT4yAUYszndfF5_0rOORwBTTlWDtuYZCIxZgk_vcsAtROPg=="
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"name\": \"The Russian\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 3,\n        \"name\": \"The Vanishing Half\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 4,\n        \"name\": \"The Midnight Library\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Viscount Who Loved Me\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Just as I Am\",\n        \"type\": \"non-fiction\",\n        \"available\": false\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Untamed\",\n        \"type\": \"non-fiction\",\n        \"available\": true\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "SingleBook",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://simple-books-api.glitch.me/books/5",
+          "protocol": "https",
+          "host": [
+            "simple-books-api",
+            "glitch",
+            "me"
+          ],
+          "path": [
+            "books",
+            "5"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "SingleBook",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://simple-books-api.glitch.me/books/5",
+              "protocol": "https",
+              "host": [
+                "simple-books-api",
+                "glitch",
+                "me"
+              ],
+              "path": [
+                "books",
+                "5"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "279"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 30 Jun 2026 04:31:06 GMT"
+            },
+            {
+              "key": "x-amzn-trace-id",
+              "value": "Root=1-6a43468a-433f9e0e5d9f111150513e7d;Parent=71579db0f27d27ed;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "key": "x-amzn-requestid",
+              "value": "9945490c-1d50-4c56-933d-6fcef1fd0f45"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "key": "x-amz-apigw-id",
+              "value": "fwf1xFLLIAMEtuA="
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "key": "x-cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "key": "via",
+              "value": "1.1 64f492880c21611818d620bbe492a0bc.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "x-amz-cf-pop",
+              "value": "PNQ50-P4"
+            },
+            {
+              "key": "x-amz-cf-id",
+              "value": "bMI7HZfNQXdHScBcbWf7pu1hZdyurgikFSnyLJ6a-vdMPozcD64wRQ=="
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 5,\n    \"entityType\": \"BOOK\",\n    \"available\": true,\n    \"timestamp\": 1752239490804,\n    \"created\": \"2025-07-11T13:11:30.804Z\",\n    \"GSI1SK\": \"BOOK#5\",\n    \"name\": \"Untamed\",\n    \"current-stock\": 20,\n    \"GSI1PK\": \"TYPE#non-fiction\",\n    \"price\": 15.5,\n    \"PK\": \"BOOK#5\",\n    \"author\": \"Glennon Doyle\",\n    \"type\": \"non-fiction\",\n    \"SK\": \"METADATA\"\n}"
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}

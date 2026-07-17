@@ -1,0 +1,360 @@
+{
+  "info": {
+    "_postman_id": "314388c3-f847-4165-9bd3-50de3765ee25",
+    "name": "Student Workflow Collection_Requests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "3390971",
+    "_collection_link": "https://go.postman.co/collection/3390971-314388c3-f847-4165-9bd3-50de3765ee25?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get All Students",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "//==================================================================================",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.have.header(\"Content-Type\");",
+              "});",
+              "//==================================================================================",
+              "pm.test(\"Response time is less than 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(2000);",
+              "});",
+              "//==================================================================================",
+              "",
+              "pm.test(\"Content-Type header is application/json\", () => {",
+              "    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');",
+              "});",
+              "//==================================================================================",
+              "",
+              "const jsonData = pm.response.json();",
+              "",
+              "pm.test(\"Validate all students\", () => {",
+              "    pm.expect(jsonData).to.be.an(\"array\");",
+              "",
+              "    jsonData.forEach(student => {",
+              "        pm.expect(student).to.be.an(\"object\");",
+              "        pm.expect(student.id).to.be.a(\"string\");",
+              "        pm.expect(student.name).to.be.a(\"string\");",
+              "        pm.expect(student.course).to.be.a(\"string\");",
+              "    });",
+              "});",
+              "",
+              "//==================================================================================",
+              "pm.test(\"Course is one of expected values\", () => {",
+              "    var jsonData = pm.response.json();",
+              "    var student = jsonData[0];",
+              "",
+              "    pm.expect(student.course).to.be.oneOf([\"Computer Science\", \"Selenium\"]);",
+              "});",
+              "//==================================================================================",
+              "pm.test(\"value of name field is Aarav\", () => {",
+              "  var jsonData = pm.response.json();",
+              "",
+              "  // If the response is an array of students, pick the first one",
+              "  var student = jsonData[0];",
+              "",
+              "  pm.expect(student.id).to.eql(\"1\");  // id is a string in your JSON",
+              "  pm.expect(student.name).to.eql(\"Aarav Sharma\");",
+              "  pm.expect(student.age).to.eql(20);",
+              "  pm.expect(student.course).to.eql(\"Computer Science\");",
+              "  pm.expect(student.email).to.eql(\"aarav.sharma@example.com\");",
+              "});",
+              "//==================================================================================",
+              "",
+              "pm.test(\"Validate all students\", () => {",
+              "    pm.expect(jsonData).to.be.an(\"array\");",
+              "",
+              "    jsonData.forEach(student => {",
+              "        pm.expect(student).to.be.an(\"object\");",
+              "        pm.expect(student.name).to.be.a(\"string\");",
+              "        pm.expect(student.id).to.be.a(\"string\");",
+              "        pm.expect(student.course).to.be.a(\"string\");",
+              "    });",
+              "});",
+              "//=================================================================================="
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url_qa_env}}students",
+          "host": [
+            "{{url_qa_env}}students"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Single Student",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "//--------------------------------------------------------------------------------------\r",
+              "pm.test(\"Content-Type is present\", function () {\r",
+              "    pm.response.to.have.header(\"Content-Type\");\r",
+              "});\r",
+              "//-------------------------------------------------------------------------------------\r",
+              "pm.test(\"Response time is less than 200ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+              "});\r",
+              "//--------------------------------------------------------------------------------------\r",
+              "pm.test(\"Content-Type header is application/json\", () => {\r",
+              "    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');\r",
+              "});\r",
+              "//--------------------------------------------------------------------------------------\r",
+              "const jsonData = pm.response.json();\r",
+              "pm.test(\"Test data type of the response\", () => {\r",
+              "    pm.expect(jsonData).to.be.an(\"object\");\r",
+              "    pm.expect(jsonData.name).to.be.a(\"string\");\r",
+              "    pm.expect(jsonData.id).to.be.a(\"string\");\r",
+              "    pm.expect(jsonData.course).to.be.an(\"string\");\r",
+              "});\r",
+              "//--------------------------------------------------------------------------------------\r",
+              "pm.test(\"Test course field\", () => {\r",
+              "    var jsonData = pm.response.json();\r",
+              "\r",
+              "    // Directly check the course field\r",
+              "    pm.expect(jsonData.course).to.eql(\"Computer Science\");\r",
+              "\r",
+              "    // Or check if course is one of multiple allowed values\r",
+              "    pm.expect(jsonData.course).to.be.oneOf([\"Computer Science\", \"Selenium\"]);\r",
+              "});\r",
+              "\r",
+              "\r",
+              "//--------------------------------------------------------------------------------------\r",
+              "pm.test(\"Validate single student response\", () => {\r",
+              "  var jsonData = pm.response.json();\r",
+              "\r",
+              "  pm.expect(jsonData.id).to.eql(\"9961\");  // id is a string\r",
+              "  pm.expect(jsonData.name).to.eql(\"Aarav Goswami\"); // remove trailing space\r",
+              "  pm.expect(jsonData.age).to.eql(21);     // match actual value\r",
+              "  pm.expect(jsonData.course).to.eql(\"Computer Science\");\r",
+              "  pm.expect(jsonData.email).to.eql(\"aarav.goswami@example.com\"); // match actual email\r",
+              "});\r",
+              "\r",
+              "//--------------------------------------------------------------------------------------\r",
+              "const schema = {\r",
+              "    \"$schema\": \"http://json-schema.org/draft-07/schema#\",\r",
+              "    \"title\": \"Student Schema\",\r",
+              "    \"type\": \"object\",\r",
+              "    \"properties\": {\r",
+              "        \"id\": { \"type\": \"string\" },\r",
+              "        \"name\": { \"type\": \"string\" },\r",
+              "        \"age\": { \"type\": \"integer\", \"minimum\": 18, \"maximum\": 100 },\r",
+              "        \"course\": { \"type\": \"string\" },\r",
+              "        \"email\": { \"type\": \"string\", \"format\": \"email\" }\r",
+              "    },\r",
+              "    \"required\": [\"id\", \"name\", \"age\", \"course\", \"email\"],\r",
+              "    \"additionalProperties\": false\r",
+              "};\r",
+              "\r",
+              "pm.test(\"Validate single student JSON schema\", function () {\r",
+              "    pm.response.to.have.jsonSchema(schema);\r",
+              "});\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url_dev_env}}students/9961",
+          "host": [
+            "{{url_dev_env}}students"
+          ],
+          "path": [
+            "9961"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post New Student",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "//Local variable\r",
+              "pm.variables.set(\"url_local\",\"http://localhost:3000/\");\r",
+              "\r",
+              "//global variable\r",
+              "pm.globals.set(\"name_global\",\"Aarav Goswami\");\r",
+              "\r",
+              "//Environment variable\r",
+              "pm.environment.set(\"age_env\",\"22\");\r",
+              "\r",
+              "//Collection variable\r",
+              "pm.collectionVariables.set(\"course_collect\",\"Computer Science\");"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "//global variable\r",
+              "pm.globals.unsetset(\"name_global\");\r",
+              "\r",
+              "//Environment variable\r",
+              "//pm.environment.set(\"age_env\",\"22\");\r",
+              "\r",
+              "//Collection variable\r",
+              "//pm.collectionVariables.set(\"course_collect\",\"Computer Science\");"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Aarav Goswami\",\r\n    \"age\": 22,\r\n    \"course\": \"Computer Science\",\r\n    \"email\": \"aarav.goswami@example.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url_global}}students/",
+          "host": [
+            "{{url_global}}students"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Student",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/students/0897",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "students",
+            "0897"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Put Update Student",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const jsonData = pm.response.json();\r",
+              "pm.test(\"Test data type of the response\", () => {\r",
+              "    pm.expect(jsonData).to.be.an(\"object\");\r",
+              "    pm.expect(jsonData.name).to.be.a(\"string\");\r",
+              "    pm.expect(jsonData.id).to.be.a(\"number\");\r",
+              "    pm.expect(jsonData.courses).to.be.an(\"array\");\r",
+              "});\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": \"9961\",\r\n    \"name\": \"Aarav Goswami\",\r\n    \"age\": 21,\r\n    \"course\": \"Computer Science\",\r\n    \"email\": \"aarav.goswami@example.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/students/9961",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "students",
+            "9961"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "course_collect",
+      "value": ""
+    }
+  ]
+}

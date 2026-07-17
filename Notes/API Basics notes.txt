@@ -1,0 +1,407 @@
+https://app.eraser.io/workspace/1lInqQuwhxDZPNFe3bdz
+
+https://www.youtube.com/watch?v=vCJVFnepECc&list=PLUDwpEzHYYLuW9XEvFEJk2kqsk6HqscI4
+Session1: Introduction to API Testing 19:57 12-06-2026
+
+1) What is Client & server?
+2) lient-server architecture
+3) What is an API?
+4) What is API Testing? Why it is needed?
+5) Types of an API - SOAP & Rest
+6) API Vs Webservice
+7) Rest API methods
+8) http Vs https
+
+Rest API methods / http requests:
+Get : we are getting some response from the server by sending us a request.  
+Post : sending the data sending the data to the server.
+Put : we can update the data in the database server through put request.
+delete:  we can delete the data from the database. 
+=========================================================-=============================================================================-=========================
+https://www.youtube.com/watch?v=zisAGm5I-Yw&list=PLUDwpEzHYYLuW9XEvFEJk2kqsk6HqscI4&index=2
+Session 2: API Testing | Postman | Environment Setup & Types of HTTP RequestsTopics Covered:
+-------------------------
+1) Postman Introduction 
+2) Postman installation -done UN/PSWD: hkamat/Postman@123 (hpk1391@gmail.com)
+3) Creating Workspace - done
+4) Creating Collection -
+5) Creating Requests - Get, Post, Put & Delete    
+6) Saving & Editing Requests
+7) Operations on Collections
+8) Things to be validated in response
+9) Status codes
+10)Cookies & Headers
+11) Response body
+12) Exporting & Importing Collections
+
+API Testing Tool -  Testers can do Manual testing of API 
+                              Developers are used to create the API documentation 
+
+Workspace: is a place where all the files are placed.
+Collection: contains the requests
+=========================================================-=============================================================================-=========================
+https://www.youtube.com/watch?v=tnpqR7Ar-BQ&list=PLUDwpEzHYYLuW9XEvFEJk2kqsk6HqscI4&index=3
+Session 3: API Testing | Postman | How To Create Own API's | JSON (Java Script Object Notation)
+To create our own API:
+1. download and install - node.js  ( by default we will get npm - node package manger)   ---> node --version    and npm --version
+2. install - json server with the help of npm    ------> npm install -g json -server
+
+json-server students.json
+
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Aarav Sharma",
+      "age": 20,
+      "course": "Computer Science",
+      "email": "aarav.sharma@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Priya Mehta",
+      "age": 22,
+      "course": "Mechanical Engineering",
+      "email": "priya.mehta@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Rohan Desai",
+      "age": 21,
+      "course": "Electrical Engineering",
+      "email": "rohan.desai@example.com"
+    }
+  ]
+}
+
+json  - java script objectr notation
+https://jsonpathfinder.com/
+
+ex: course: Electrical Engineering
+              --->         x.students[2].course
+==========================================================completed===========================================================================================
+https://www.youtube.com/watch?v=B5XSpX7cxcY&list=PLUDwpEzHYYLuW9XEvFEJk2kqsk6HqscI4&index=4
+Session 4: API Testing | Postman | API Response Validations | Different types of Assertions 19:12 24-06-2026
+
+Response Validation:
+Headers / Status code / cookies / Response time and Response body
+--------------------------------------------------------------------
+Assertion - Validation point 
+library provided by Postman - pm
+contains many functions
+
+Normal Function:
+Arrow Function"
+
+chai Assertion Library - JavaScript framework
+pm.test ( "Test Name", function()
+                      {
+                         //assertion
+                      }
+);
+
+pm.test ( "Test Name", () =>
+                      {
+                         //assertion
+                      }
+);
+--------------------------------------------------------------------
+Scripts >  after response > snippets   -- click the respective snippet > save and Send   |      Validate in the Tests Results of the console  | pass or fail will display 
+
+Testing Status Codes:
+Test for the response status code:
+pm.test("Status code is 200", () => {
+    pm.response.to.have.status(200);
+});
+
+If you want to test for the status code being one of a set, include them all in an array and use oneOf:
+pm.test("Successful POST request", () => {
+    pm.expect(pm.response.code).to.be.oneOf([201,202]);
+});
+
+Check the status code text:
+pm.test("Status code name has string", () => {
+    pm.response.to.have.status("Created");
+});
+
+
+=======-===============================
+Testing Headers
+Check that a response header is present:
+pm.test("Content-Type header is present", () => {
+    pm.response.to.have.header("Content-Type");
+});
+
+
+Test for a response header having a particular value:
+pm.test("Content-Type header is application/json", () => {
+    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json; charset=utf-8');
+});
+=-============-=========================
+Testing Cookies
+Test if a cookie is present in the response:
+pm.test("Cookie 'language' is present", () => {
+    pm.expect(pm.cookies.has('language')).to.be.true;
+});
+
+Test for a particular cookie value:
+pm.test("Cookie language has value 1", () => {
+    pm.expect(pm.cookies.get('language')).to.eql('en-gb');
+});
+
+
+Testing Response Times
+Test for the response time to be within a specified range:
+pm.test("Response time is less than 200ms", () => {
+    pm.expect(pm.response.responseTime).to.be.below(200);
+});
+
+============================================
+Asserting a Value Type
+Test the type of any part of the response:
+Sample JSON object:
+{
+    "id": 1,
+    "name": "John",
+    "location": "india",
+    "phone": "1234567890",
+    "courses": [
+        "Java",
+        "Selenium"
+    ]
+}
+
+const jsonData = pm.response.json();
+pm.test("Test data type of the response", () => {
+    pm.expect(jsonData).to.be.an("object");
+    pm.expect(jsonData.name).to.be.a("string");
+    pm.expect(jsonData.id).to.be.a("number");
+    pm.expect(jsonData.courses).to.be.an("array");
+});
+=========================================
+Asserting Array Properties
+Check if an array is empty and if it contains particular items:
+Sample JSON object:{
+    "id": 1,
+    "name": "John",
+    "location": "india",
+    "phone": "1234567890",
+    "courses": [
+        "Java",
+        "Selenium"
+    ]
+}
+Postman test script:
+pm.test("Test array properties", () => {
+    //courses includes "Java"
+    pm.expect(jsonData.courses).to.include("Java");
+    //courses array must include all listed
+    pm.expect(jsonData.courses)
+        .to.have.members(["Java", "Selenium"]);
+});
+======================================
+Validating JSON Fields in Response
+Sample JSON object:{
+  "id": 1,
+  "name": "John",
+  "location": "india",
+  "phone": "1234567890",
+  "courses": [
+    "Java",
+    "Selenium"
+  ]
+}
+Postman test script:
+pm.test("value of location field is India", () => {
+  var jsonData = pm.response.json();
+  pm.expect(jsonData.id).to.eql(1);
+  pm.expect(jsonData.name).to.eql("John");
+  pm.expect(jsonData.location).to.eql("india");
+  pm.expect(jsonData.phone).to.eql("1234567890");
+  pm.expect(jsonData.courses[0]).to.eql("Java");
+  pm.expect(jsonData.courses[1]).to.eql("Selenium");
+});
+=============================================
+JSON Schema:
+
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Aarav Sharma",
+      "age": 20,
+      "course": "Computer Science",
+      "email": "aarav.sharma@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Priya Mehta",
+      "age": 22,
+      "course": "Mechanical Engineering",
+      "email": "priya.mehta@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Rohan Desai",
+      "age": 21,
+      "course": "Electrical Engineering",
+      "email": "rohan.desai@example.com"
+    }
+  ]
+}
+=======Schema is :=================================
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Students Schema",
+  "type": "object",
+  "properties": {
+    "students": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "course": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          }
+        },
+        "required": ["id", "name", "age", "course", "email"]
+      }
+    }
+  },
+  "required": ["students"]
+}
+
+json schema validation
+
+=================================================completed==============================================================================================================
+https://www.youtube.com/watch?v=GZTwJYL53IY&list=PLUDwpEzHYYLuW9XEvFEJk2kqsk6HqscI4&index=5
+Session 5: API Testing | Postman | Scripts & Types of Variables
+
+
+Pre-request scripts:
+post-request scripts: normal function and arrow function   (chai , mocha framework)
+
+Use of the Scripts:
+-------------------------------------------------------------------------------------------------------------------------------------
+Variables:
+what: stores some data
+why we need? = data is repeated/common and is needed for many requests.
+where we will use?  - In multiple levels and how we can use.
+
+Global variable - for all the collection in one environment
+Collection level - only in the one collection where it is created
+environment level - environment level 
+--------------------
+local variables: created inside the pre-request script
+//Local variable
+pm.variables.set("url_local","http://localhost:3000/");
+-------------------------------------------------------------------------------------------------------------------------------------
+DELETE or UNSET the variables after the usage on the fly:
+//global variable
+pm.globals.unset("name_global");
+
+//Environment variable
+pm.environment.unset("age_env");
+
+//Collection variable
+pm.collectionVariables.unset("course_collect");
+
+=================================================completed==============================================================================================================
+https://www.youtube.com/watch?v=rHeoPN-enCI
+Session 6: API Testing | Postman | API Chaining                          *********IMPORTANT***************
+
+//capture the response in the variable 'response'
+
+
+// Parse the response body as JSON
+var jsonData = pm.response.json();
+
+// Access the "id" field
+pm.globals.set("id", jsonData.id);
+
+
+--------------------------------------------------------------------------------------------------------------------
+Bearer Token for the Remote api access.
+EX:  Gorest API:
+
+(Token) API Key: e058ea7c06d1757a7ddd34fc33f256ac6f3e6c261e576c51bb29520e126947b9
+
+https://gorest.co.in/
+
+POST https://gorest.co.in/public/v2/users
+
+Request Body:
+  {
+    "name": "Aanjaneya Iyengar",
+    "email": "aanjaneya_iyengar@hickle.test",
+    "gender": "male",	
+    "status": "active"
+  }
+
+response: {
+    "id": 8528081,
+    "name": "Aanjaneya Iyengarr",
+    "email": "aanjaneya_iyengarr@hickle.test",
+    "gender": "male",
+    "status": "active"
+}
+-----------------------------------
+GET       https://gorest.co.in/public/v2/users/8095755
+-----------------------------------
+PATCH   https://gorest.co.in/public/v2/users/8095755
+Or
+PUT      https://gorest.co.in/public/v2/users/8095755
+----------------------------------------------------------------------
+DELETE https://gorest.co.in/public/v2/users/8095755
+-----------------------------------
+
+without Token :401 Unauthorized
+{
+    "message": "Authentication failed"
+}
+
+So provide (Token) API Key: e058ea7c06d1757a7ddd34fc33f256ac6f3e6c261e576c51bb29520e126947b9
+ 
+------------------------------------------------------------------------
+Randomly creating the data:
+var random = Math.floor(Math.random() * 1000000); // ensures numeric suffix
+var usermail = "test" + random + "@gmail.com";
+var username = "test" + random;
+
+pm.environment.set("email_env", usermail);
+pm.environment.set("name_env", username);
+
+and provide this in body:
+{
+  "name": "{{name_env}}",
+  "email": "{{email_env}}",
+  "gender": "male",
+  "status": "active"
+}
+------------------------------------------------------------------------
+{
+    "accessToken": "1d929ed9af88e891622cb6e54ffac4b6acc0815d0ba9d48768f61dce14fa8e97"
+} 
+
+
+
+
+
+
+
+
+

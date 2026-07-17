@@ -1,0 +1,693 @@
+{
+  "info": {
+    "_postman_id": "694a8f39-7e9a-4d50-b217-06e8ce561c7f",
+    "name": "Authentications",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "3390971",
+    "_collection_link": "https://go.postman.co/collection/3390971-694a8f39-7e9a-4d50-b217-06e8ce561c7f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "OAuth 2.0 GitHub Authentication",
+      "item": [
+        {
+          "name": "GET Clientid",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://github.com/login/oauth/authorize?client_id=Ov23ctdXNzfUOissDT99\n\n",
+              "protocol": "https",
+              "host": [
+                "github",
+                "com"
+              ],
+              "path": [
+                "login",
+                "oauth",
+                "authorize"
+              ],
+              "query": [
+                {
+                  "key": "client_id",
+                  "value": "Ov23ctdXNzfUOissDT99\n\n"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "GET Clientid",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://github.com/login/oauth/authorize?client_id=Ov23ctdXNzfUOissDT99\n\n",
+                  "protocol": "https",
+                  "host": [
+                    "github",
+                    "com"
+                  ],
+                  "path": [
+                    "login",
+                    "oauth",
+                    "authorize"
+                  ],
+                  "query": [
+                    {
+                      "key": "client_id",
+                      "value": "Ov23ctdXNzfUOissDT99\n\n"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 30 Jun 2026 11:15:18 GMT"
+                },
+                {
+                  "key": "content-type",
+                  "value": "text/html; charset=utf-8"
+                },
+                {
+                  "key": "vary",
+                  "value": "X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, Sec-Fetch-Site,Accept-Encoding, Accept, X-Requested-With"
+                },
+                {
+                  "key": "cache-control",
+                  "value": "no-store"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"d5b0f3f479899e437ff343036e0f0af7\""
+                },
+                {
+                  "key": "strict-transport-security",
+                  "value": "max-age=31536000; includeSubdomains; preload"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "deny"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "0"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "content-security-policy",
+                  "value": "default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com browser.events.data.microsoft.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/"
+                },
+                {
+                  "key": "server",
+                  "value": "github.com"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "accept-ranges",
+                  "value": "bytes"
+                },
+                {
+                  "key": "set-cookie",
+                  "value": "_gh_sess=tpgO4Cchfb7dsNkd5kDS0tGbHtc1mp7WFxXhRobTwSy1%2BUX23%2FaLq16FqXLAms%2BEhCrMHK3LQx74bJDX7on%2FLeiNEshEVoAl%2FLtO60K5747m2gzROBZxl76WCz7MCkYc0u3VgH6TVlNEtajBGJKZiHFkzwGFMiX8UjYhmgGgCnnn0wb%2FzlNdi94rwWqnklR2CvWRH7i3vVXSPks%2B8NuDvzA9Ib%2Fe2qThfyT7lvzi%2FFYAC3Lxhr3penOTX6fpoG%2Bt9Tjx%2B%2BZgi%2BV9ZmeXHR4d7w%3D%3D--GPSeLVsiNXkVTpiV--eaEALFeqAqBNnbXEnQfOOQ%3D%3D; path=/; HttpOnly; secure; SameSite=Lax"
+                },
+                {
+                  "key": "set-cookie",
+                  "value": "logged_in=no; expires=Wed, 30 Jun 2027 11:15:18 GMT; domain=.github.com; path=/; HttpOnly; secure; SameSite=Lax"
+                },
+                {
+                  "key": "x-github-request-id",
+                  "value": "0D6E:A60E5:7CDFBF:845BA8:6A43A546"
+                }
+              ],
+              "cookie": [],
+              "body": " \n\n\n\n\n\n\n\n<!DOCTYPE html>\n<html\n  lang=\"en\"\n    class=\"html-auth\"\n  \n  data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"\n  data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"\n  \n  >\n    <head>\n        <meta charset=\"utf-8\">\n        <link rel=\"dns-prefetch\" href=\"https://github.githubassets.com\">\n        <link rel=\"dns-prefetch\" href=\"https://avatars.githubusercontent.com\">\n        <link rel=\"dns-prefetch\" href=\"https://github-cloud.s3.amazonaws.com\">\n        <link rel=\"dns-prefetch\" href=\"https://user-images.githubusercontent.com/\">\n        <link rel=\"preconnect\" href=\"https://github.githubassets.com\" crossorigin>\n        <link rel=\"preconnect\" href=\"https://avatars.githubusercontent.com\">\n        <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/light-4fded0090af0ad58.css\" />\n        <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/light_high_contrast-cf8e26bc17e62ebc.css\" />\n        <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/dark-06381ff23d863842.css\" />\n        <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/dark_high_contrast-9023e6605402defb.css\" />\n        <link data-color-theme=\"light\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/light-4fded0090af0ad58.css\" />\n        <link data-color-theme=\"light_high_contrast\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/light_high_contrast-cf8e26bc17e62ebc.css\" />\n        <link data-color-theme=\"light_colorblind\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/light_colorblind-3a437477a570cc40.css\" />\n        <link data-color-theme=\"light_colorblind_high_contrast\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/light_colorblind_high_contrast-39b6c209db5491c9.css\" />\n        <link data-color-theme=\"light_tritanopia\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/light_tritanopia-3822234d6c03b00b.css\" />\n        <link data-color-theme=\"light_tritanopia_high_contrast\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/light_tritanopia_high_contrast-33857254a8064bf7.css\" />\n        <link data-color-theme=\"dark\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/dark-06381ff23d863842.css\" />\n        <link data-color-theme=\"dark_high_contrast\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/dark_high_contrast-9023e6605402defb.css\" />\n        <link data-color-theme=\"dark_colorblind\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/dark_colorblind-37023bf69d8e0e34.css\" />\n        <link data-color-theme=\"dark_colorblind_high_contrast\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/dark_colorblind_high_contrast-486bd43e01a2c0ec.css\" />\n        <link data-color-theme=\"dark_tritanopia\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/dark_tritanopia-838ba2a5070c5b09.css\" />\n        <link data-color-theme=\"dark_tritanopia_high_contrast\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/dark_tritanopia_high_contrast-2aa7245dc545d61f.css\" />\n        <link data-color-theme=\"dark_dimmed\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/dark_dimmed-29ef2eb185e7de1c.css\" />\n        <link data-color-theme=\"dark_dimmed_high_contrast\" crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" data-href=\"https://github.githubassets.com/assets/dark_dimmed_high_contrast-8eed6b212f10f1b9.css\" />\n        <style type=\"text/css\">\n    :root {\n      --tab-size-preference: 4;\n    }\n\n    pre, code {\n      tab-size: var(--tab-size-preference);\n    }\n  </style>\n        <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/primer-primitives-b39ad27f3538ace3.css\" />\n        <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/primer-70be7debc79a8eff.css\" />\n        <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/global-d18f184ea1a06a2c.css\" />\n        <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/github-eab9c5888b163e42.css\" />\n        <script type=\"application/json\" id=\"client-env\">{\"locale\":\"en\",\"featureFlags\":[\"actions_custom_images_storage_billing_ui_visibility\",\"actions_enable_background_steps\",\"actions_image_version_event\",\"actions_workflow_language_service_allow_concurrency_queue\",\"agent_author_search_expansion\",\"agent_author_search_expansion_ui_pulls\",\"agent_conflict_resolution\",\"alternate_user_config_repo\",\"artifact_ui_v2\",\"billing_billable_licenses_cost_center_bucket_fix\",\"billing_discount_threshold_notification\",\"billing_user_level_budgets\",\"billing_user_level_budgets_manage\",\"code_scanning_dfa_degraded_experience_notice\",\"code_view_raf_sticky_lines\",\"codespaces_prebuild_region_target_update\",\"codeview_sidebar_combined_payload\",\"coding_agent_model_selection\",\"coding_agent_model_selection_all_skus\",\"comment_viewer_copy_raw_markdown\",\"contentful_primer_code_blocks\",\"copilot_agent_snippy\",\"copilot_api_agentic_issue_marshal_yaml\",\"copilot_ask_mode_dropdown\",\"copilot_automation_suggest_tools_enabled\",\"copilot_automations_suggested_automations\",\"copilot_chat_attach_multiple_images\",\"copilot_chat_auto_mode_picker_paid\",\"copilot_chat_category_rate_limit_messages\",\"copilot_chat_clear_model_selection_for_default_change\",\"copilot_chat_contextual_suggestions_updated\",\"copilot_chat_docked_panel\",\"copilot_chat_enable_tool_call_logs\",\"copilot_chat_input_commands\",\"copilot_chat_interspersed_tool_calls\",\"copilot_chat_max_upsell\",\"copilot_chat_model_picker_info_popover\",\"copilot_chat_models_browser_cache\",\"copilot_chat_opening_thread_switch\",\"copilot_chat_prettify_pasted_code\",\"copilot_chat_reduce_quota_checks\",\"copilot_chat_vision_in_claude\",\"copilot_chat_vision_preview_gate\",\"copilot_cli_install_cta_max_plan\",\"copilot_cloud_agent_always_categorize_models_in_model_picker\",\"copilot_custom_copilots\",\"copilot_custom_copilots_feature_preview\",\"copilot_diff_explain_conversation_intent\",\"copilot_diff_reference_context\",\"copilot_duplicate_thread\",\"copilot_extensions_removal_on_marketplace\",\"copilot_file_block_ref_matching\",\"copilot_fix_blank_side_panel\",\"copilot_fix_failed_workflows\",\"copilot_fix_failed_workflows_all_skus\",\"copilot_ftp_hyperspace_upgrade_prompt\",\"copilot_hide_hovercard\",\"copilot_immersive_code_block_transition_wrap\",\"copilot_immersive_embedded_deferred_payload\",\"copilot_immersive_embedded_draggable\",\"copilot_immersive_embedded_header_button\",\"copilot_immersive_embedded_implicit_references\",\"copilot_immersive_embedded_skip_copilot_api_token_for_dotcom_context\",\"copilot_immersive_file_block_transition_open\",\"copilot_immersive_file_preview_keep_mounted\",\"copilot_immersive_hide_column_right_without_thread\",\"copilot_immersive_job_result_preview\",\"copilot_immersive_suggestion_pills\",\"copilot_immersive_task_hyperlinking\",\"copilot_immersive_task_within_chat_thread\",\"copilot_mc_cli_resume_any_users_task\",\"copilot_mc_nudges\",\"copilot_mission_control_agent_filtering\",\"copilot_mission_control_always_send_integration_id\",\"copilot_mission_control_environment_list_icons\",\"copilot_mission_control_initial_data_spinner\",\"copilot_mission_control_needs_attention\",\"copilot_mission_control_sandbox_remote_bypass\",\"copilot_mission_control_session_filters\",\"copilot_mission_control_task_alive_updates\",\"copilot_mission_control_task_sharing\",\"copilot_org_policy_page_focus_mode\",\"copilot_plans_signups_enabled\",\"copilot_pr_chat_enhancements\",\"copilot_prominent_upgrade_button\",\"copilot_quota_banner_pr_files_changed\",\"copilot_redirect_header_button_to_agents\",\"copilot_resource_panel\",\"copilot_share_active_subthread\",\"copilot_spaces_ga\",\"copilot_spaces_individual_policies_ga\",\"copilot_spark_empty_state\",\"copilot_spark_handle_nil_friendly_name\",\"copilot_swe_agent_authorization_status_ui\",\"copilot_swe_agent_hide_model_picker_if_only_auto\",\"copilot_swe_agent_pr_comment_model_picker\",\"copilot_swe_agent_pull_request_merged_trigger\",\"copilot_swe_agent_pull_request_opened_trigger\",\"copilot_swe_agent_pull_request_synchronize_trigger\",\"copilot_swe_agent_use_subagents\",\"copilot_task_api_github_rest_style\",\"copilot_token_based_billing\",\"copilot_unconfigured_is_inherited\",\"copilot_user_can_upgrade_plan_field\",\"copilot_workbench_ubb\",\"custom_properties_core_reusable_property_value_field\",\"dashboard_indexeddb_caching\",\"dashboard_lists_max_age_filter\",\"dashboard_universe_2025_feedback_dialog\",\"flex_cta_groups_mvp\",\"flex_suite_overview\",\"ga_enterprise_teams_ui\",\"global_nav_react\",\"global_nav_responsive_create_menu\",\"hyperspace_2025_logged_out_batch_1\",\"hyperspace_2025_logged_out_batch_2\",\"hyperspace_2025_logged_out_batch_3\",\"in_product_messaging_datadog_monitoring\",\"ipm_budget_deep_linking\",\"ipm_global_transactional_message_agents\",\"ipm_global_transactional_message_copilot\",\"ipm_global_transactional_message_issues\",\"ipm_global_transactional_message_prs\",\"ipm_global_transactional_message_repos\",\"ipm_global_transactional_message_spaces\",\"issue_cca_modal_open\",\"issue_cca_multi_assign_modal\",\"issue_cca_visualization\",\"issue_fields_global_search\",\"issue_fields_index_pills\",\"issue_inline_avatars\",\"issue_pinned_views\",\"issue_pinned_views_index_page\",\"issue_pinned_views_preheat_sidebar_links\",\"issue_pinned_views_projects_react\",\"issues_expanded_file_types\",\"issues_lazy_load_comment_box_suggestions\",\"issues_react_chrome_container_query_fix\",\"issues_search_type_gql\",\"landing_pages_ninetailed\",\"landing_pages_web_vitals_tracking\",\"lifecycle_label_name_updates\",\"low_quality_classifier\",\"marketing_pages_search_explore_provider\",\"memex_default_issue_create_repository\",\"memex_live_update_hovercard\",\"memex_mwl_filter_field_delimiter\",\"memex_remove_deprecated_type_issue\",\"merge_status_header_feedback\",\"oauth_authorize_clickjacking_protection\",\"octocaptcha_origin_optimization\",\"primer_react_css_anchor_positioning\",\"prs_css_anchor_positioning\",\"react_blob_isolate_code_lines\",\"react_data_router_tanstack_allowed\",\"react_editor_actions_sidebar\",\"react_editor_devcontainer_sidebar\",\"react_sandbox_future_tanstack\",\"repos_contributors_limited_default_range\",\"rules_insights_filter_bar_created\",\"rules_required_reviewers_block_description\",\"sample_network_conn_type\",\"secret_scanning_pattern_alerts_link\",\"security_center_artifact_filters_popover\",\"semantic_similarity_duplicate_issue_detection\",\"session_logs_ungroup_reasoning_text\",\"site_banner_desktop_copilot_app\",\"site_github_app_ga_page\",\"site_global_nav_spark_models_removed\",\"spark_prompt_secret_scanning\",\"spark_server_connection_status\",\"suppress_automated_browser_vitals\",\"viewscreen_sandbox\",\"warn_inaccessible_attachments\",\"webp_support\",\"workbench_store_readonly\"],\"copilotApiOverrideUrl\":\"https://api.githubcopilot.com\",\"cmcApiUrl\":\"https://api.github.com/cmc_internal/api\"}</script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/high-contrast-cookie-f677d880a3032514.js\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/wp-runtime-6df85b5b441e0904.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/fetch-utilities-203b3fe451178bee.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/78205-490cbc32cb03f2c4.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/85924-fb319ed7734a3255.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/34646-df1435514b8de12f.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/environment-206299963839690a.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/runtime-helpers-1ab84bfcdfd252a7.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/296-dd7acbc3c57bc2df.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/57131-96925ee146d82566.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/816-267fa8a626344744.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/78121-700198d991c19201.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/81683-3566d15213106a0d.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/64458-988347c24883c3dc.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/46740-245323eebf4a2bd5.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/3650-2d2c2aa6afec76de.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/17127-d486438dd582dbb8.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/github-elements-908aaaa22fbfa2a1.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/element-registry-267b24ed35ef774c.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/react-core-bb49c0f6cbc7b4f8.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/react-lib-57bed375ade723a7.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/63143-7622d55d24560a56.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/79039-3efc4ce0c2830d00.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/88475-734f67255a069671.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/2887-6bb5fc2f7d7910bf.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/62220-0c9944955b4e2cbb.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/26533-4b12abfae7db7903.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/7088-4eaf1fbdb5e0697b.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/9506-5679f156315d844a.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/53320-0a81d3275826594e.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/46287-50b124258ef9c356.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/23548-06460d6ad6134b8e.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/89627-d6568840e3302a2b.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/55682-4f9c532916993730.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/49029-7ca2ead5f497f031.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/99328-0f824473476788e3.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/behaviors-a588225710df8951.js\" defer=\"defer\"></script>\n        <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/react-core.b94b9a549dd13585.module.css\" />\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/61272-f2158b5d00e77e7b.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/notifications-global-af6906205a03177b.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/57639-c11f2fce6b8a5462.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/98304-e396ebf96aff23e2.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/19930-c2749e0e22d03aed.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/37438-ef8a676c1fc3fbdf.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/settings-1ae1b96a3b736e45.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/70666-d9f2187307ac669b.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/89564-f2b4b3a866e42fd2.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/sessions-aef37199526c3a66.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/68522-99aa6a59cc02fc04.js\" defer=\"defer\"></script>\n        <script crossorigin=\"anonymous\" type=\"module\" src=\"https://github.githubassets.com/assets/signup-ca9d9c174c065847.js\" defer=\"defer\"></script>\n        <title>Sign in to GitHub · GitHub</title>\n        <meta name=\"route-pattern\" content=\"/login(.:format)\" data-turbo-transient>\n        <meta name=\"route-controller\" content=\"sessions\" data-turbo-transient>\n        <meta name=\"route-action\" content=\"new\" data-turbo-transient>\n        <meta name=\"fetch-nonce\" content=\"v2:6ccdae2f-b682-de68-3ee9-eb0411893832\">\n        <meta name=\"current-catalog-service-hash\" content=\"701273d4944fb23919c770da2da3f33b6da9ed8e668f7249090e3e9f429343b5\">\n        <meta name=\"request-id\" content=\"0D6E:A60E5:7CDFBF:845BA8:6A43A546\" data-pjax-transient=\"true\"/>\n        <meta name=\"html-safe-nonce\" content=\"eba9daac78bddc18d1e9a593ab05b66474f5f0758ad8bf9d3af2c84e3821db93\" data-pjax-transient=\"true\"/>\n        <meta name=\"visitor-payload\" content=\"eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9sb2dpbi9vYXV0aC9hdXRob3JpemU/Y2xpZW50X2lkPU92MjNjdGRYTnpmVU9pc3NEVDk5JTBBJTBBIiwicmVxdWVzdF9pZCI6IjBENkU6QTYwRTU6N0NERkJGOjg0NUJBODo2QTQzQTU0NiIsInZpc2l0b3JfaWQiOiI4NjU2NTk5OTY0MTYwMTM1MCIsInJlZ2lvbl9lZGdlIjoiY2VudHJhbGluZGlhIiwicmVnaW9uX3JlbmRlciI6ImNlbnRyYWxpbmRpYSJ9\" data-pjax-transient=\"true\"/>\n        <meta name=\"visitor-hmac\" content=\"e74a7e2b6f3343c53db059c3fd7c8eef1cb17e7394a569ef92e24097ac1e7258\" data-pjax-transient=\"true\"/>\n        <meta name=\"github-keyboard-shortcuts\" content=\"copilot\" data-turbo-transient=\"true\" />\n        <meta name=\"selected-link\" value=\"/login\" data-turbo-transient>\n        <link rel=\"assets\" href=\"https://github.githubassets.com/\">\n        <meta name=\"google-site-verification\" content=\"Apib7-x98H0j5cPqHWwSMm6dNU4GmODRoqxLiDzdx9I\">\n        <meta name=\"octolytics-url\" content=\"https://collector.github.com/github/collect\" />\n        <meta name=\"analytics-location-query-strip\" content=\"true\" data-turbo-transient=\"true\" />\n        <meta name=\"user-login\" content=\"\">\n        <meta name=\"viewport\" content=\"width=device-width\">\n        <meta name=\"description\" content=\"GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.\">\n        <link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"/opensearch.xml\" title=\"GitHub\">\n        <link rel=\"fluid-icon\" href=\"https://github.com/fluidicon.png\" title=\"GitHub\">\n        <meta property=\"fb:app_id\" content=\"1401488693436528\">\n        <meta property=\"og:url\" content=\"https://github.com\">\n        <meta property=\"og:site_name\" content=\"GitHub\">\n        <meta property=\"og:title\" content=\"Build software better, together\">\n        <meta property=\"og:description\" content=\"GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.\">\n        <meta property=\"og:image\" content=\"https://github.githubassets.com/assets/github-logo-55c5b9a1fe52.png\">\n        <meta property=\"og:image:type\" content=\"image/png\">\n        <meta property=\"og:image:width\" content=\"1200\">\n        <meta property=\"og:image:height\" content=\"1200\">\n        <meta property=\"og:image\" content=\"https://github.githubassets.com/assets/github-mark-57519b92ca4e.png\">\n        <meta property=\"og:image:type\" content=\"image/png\">\n        <meta property=\"og:image:width\" content=\"1200\">\n        <meta property=\"og:image:height\" content=\"620\">\n        <meta property=\"og:image\" content=\"https://github.githubassets.com/assets/github-octocat-13c86b8b336d.png\">\n        <meta property=\"og:image:type\" content=\"image/png\">\n        <meta property=\"og:image:width\" content=\"1200\">\n        <meta property=\"og:image:height\" content=\"620\">\n        <meta property=\"twitter:site\" content=\"github\">\n        <meta property=\"twitter:site:id\" content=\"13334762\">\n        <meta property=\"twitter:creator\" content=\"github\">\n        <meta property=\"twitter:creator:id\" content=\"13334762\">\n        <meta property=\"twitter:card\" content=\"summary_large_image\">\n        <meta property=\"twitter:title\" content=\"GitHub\">\n        <meta property=\"twitter:description\" content=\"GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.\">\n        <meta property=\"twitter:image\" content=\"https://github.githubassets.com/assets/github-logo-55c5b9a1fe52.png\">\n        <meta property=\"twitter:image:width\" content=\"1200\">\n        <meta property=\"twitter:image:height\" content=\"1200\">\n        <meta name=\"hostname\" content=\"github.com\">\n        <meta name=\"expected-hostname\" content=\"github.com\">\n        <meta http-equiv=\"x-pjax-version\" content=\"736e166c8e3d2f241dc791b56525d1c3f737f16f94c80437c01a16e5cfcb54b9\" data-turbo-track=\"reload\">\n        <meta http-equiv=\"x-pjax-csp-version\" content=\"306a0c2aa15459bcb1610c25a1433713ef76296ff95e109d6c768ce26a6655d4\" data-turbo-track=\"reload\">\n        <meta http-equiv=\"x-pjax-css-version\" content=\"b3be1289ad742851e907dca55dc633edddbec00c3a025831d3c678234c6d5d77\" data-turbo-track=\"reload\">\n        <meta http-equiv=\"x-pjax-js-version\" content=\"8cd520bbc8afb2e6d5f162d661aea6393d08948a45b0c14167bc257c9424f179\" data-turbo-track=\"reload\">\n        <meta name=\"turbo-cache-control\" content=\"no-preview\" data-turbo-transient=\"\">\n        <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/github-eab9c5888b163e42.css\" />\n        <link rel=\"canonical\" href=\"https://github.com/login\" data-turbo-transient>\n        <meta name=\"turbo-body-classes\" content=\"logged-out env-production page-responsive session-authentication\">\n        <meta name=\"disable-turbo\" content=\"false\">\n        <meta name=\"browser-stats-url\" content=\"https://api.github.com/_private/browser/stats\">\n        <meta name=\"browser-errors-url\" content=\"https://api.github.com/_private/browser/errors\">\n        <meta name=\"release\" content=\"0a880a6039c545462f2d2f896ffed040caf8da7d\" data-turbo-track=\"reload\">\n        <meta name=\"ui-target\" content=\"full\">\n        <link rel=\"mask-icon\" href=\"https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg\" color=\"#000000\">\n        <link rel=\"alternate icon\" class=\"js-site-favicon\" type=\"image/png\" href=\"https://github.githubassets.com/favicons/favicon.png\">\n        <link rel=\"icon\" class=\"js-site-favicon\" type=\"image/svg+xml\" href=\"https://github.githubassets.com/favicons/favicon.svg\" data-base-href=\"https://github.githubassets.com/favicons/favicon\">\n        <meta name=\"theme-color\" content=\"#1e2327\">\n        <meta name=\"color-scheme\" content=\"light dark\" />\n        <link rel=\"manifest\" href=\"/manifest.json\" crossOrigin=\"use-credentials\">\n\n  \n    </head>\n    <body class=\"logged-out env-production page-responsive session-authentication\" style=\"word-wrap: break-word;\" >\n        <div data-turbo-body class=\"logged-out env-production page-responsive session-authentication\" style=\"word-wrap: break-word;\" >\n            <div id=\"__primerPortalRoot__\" style=\"z-index: 1000; position: absolute; width: 100%;\" data-turbo-permanent></div>\n            <div class=\"position-relative header-wrapper js-header-wrapper \">\n                <a href=\"#start-of-content\" data-skip-target-assigned=\"false\" class=\"px-2 tmp-py-4 color-bg-accent-emphasis color-fg-on-emphasis show-on-focus js-skip-to-content\">Skip to content</a>\n                <span data-view-component=\"true\" class=\"progress-pjax-loader Progress position-fixed width-full\">\n                    <span style=\"width: 0%;\" data-view-component=\"true\" class=\"Progress-item progress-pjax-loader-bar left-0 top-0 color-bg-accent-emphasis\"></span>\n                </span>\n                <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/primer-react-css.7372dee7532435da.module.css\" />\n                <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/keyboard-shortcuts-dialog.c224b6b9df030c42.module.css\" />\n                <react-partial\n  partial-name=\"keyboard-shortcuts-dialog\"\n  data-ssr=\"false\"\n  data-attempted-ssr=\"false\"\n  data-react-profiling=\"false\"\n>\n                    <script type=\"application/json\" data-target=\"react-partial.embeddedData\">{\"props\":{\"docsUrl\":\"https://docs.github.com/get-started/accessibility/keyboard-shortcuts\"}}</script>\n                    <div data-target=\"react-partial.reactRoot\"></div>\n                </react-partial>\n                <div class=\"authentication-header-page\" role=\"banner\">\n\n</div>\n                <div hidden=\"hidden\" data-view-component=\"true\" class=\"js-stale-session-flash stale-session-flash flash flash-warn flash-full\">\n                    <svg aria-hidden=\"true\" data-component=\"Octicon\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-alert\">\n                        <path d=\"M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z\"></path>\n                    </svg>\n                    <span class=\"js-stale-session-flash-signed-in\" hidden>You signed in with another tab or window. \n                        <a class=\"Link--inTextBlock\" href=\"\">Reload</a> to refresh your session.\n                    </span>\n                    <span class=\"js-stale-session-flash-signed-out\" hidden>You signed out in another tab or window. \n                        <a class=\"Link--inTextBlock\" href=\"\">Reload</a> to refresh your session.\n                    </span>\n                    <span class=\"js-stale-session-flash-switched\" hidden>You switched accounts on another tab or window. \n                        <a class=\"Link--inTextBlock\" href=\"\">Reload</a> to refresh your session.\n                    </span>\n                    <button id=\"icon-button-e5631a9d-2c3c-41d1-9276-4e9ae521b085\" aria-labelledby=\"tooltip-39f15ff8-7291-4546-bf08-2595c883b5ad\" type=\"button\" data-view-component=\"true\" class=\"Button Button--iconOnly Button--invisible Button--medium flash-close js-flash-close\">\n                        <svg aria-hidden=\"true\" data-component=\"Octicon\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-x Button-visual\">\n                            <path d=\"M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z\"></path>\n                        </svg>\n                    </button>\n                    <tool-tip id=\"tooltip-39f15ff8-7291-4546-bf08-2595c883b5ad\" for=\"icon-button-e5631a9d-2c3c-41d1-9276-4e9ae521b085\" popover=\"manual\" data-direction=\"s\" data-type=\"label\" data-view-component=\"true\" class=\"sr-only position-absolute\">Dismiss alert</tool-tip>\n                </div>\n            </div>\n            <div id=\"start-of-content\" class=\"show-on-focus\"></div>\n            <div\n    class=\"application-main \"\n    data-commit-hovercards-enabled\n    data-discussion-hovercards-enabled\n    data-issue-and-pr-hovercards-enabled\n    data-project-hovercards-enabled\n  >\n                <main>\n                    <div data-test-selector=\"login-standard-view\" data-hpc=\"true\" class=\"authentication \">\n                        <div class=\"authentication-header \">\n                            <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/primer-react-css.7372dee7532435da.module.css\" />\n                            <link crossorigin=\"anonymous\" media=\"all\" rel=\"stylesheet\" href=\"https://github.githubassets.com/assets/sessions-auth-header.9d122d6c9aad8afb.module.css\" />\n                            <react-partial\n  partial-name=\"sessions-auth-header\"\n  data-ssr=\"true\"\n  data-attempted-ssr=\"true\"\n  data-react-profiling=\"false\"\n>\n                                <script type=\"application/json\" data-target=\"react-partial.embeddedData\">{\"props\":{\"variant\":\"github\",\"avatarUrl\":null,\"userName\":null,\"title\":\"Sign in to GitHub\",\"description\":null}}</script>\n                                <div data-target=\"react-partial.reactRoot\">\n                                    <div class=\"SessionsAuthHeader-module__authFormHeader__S9PBN\">\n                                        <div class=\"SessionsAuthHeader-module__authFormHeaderIcon__NP4aI\">\n                                            <div class=\"SessionsAuthHeader-module__authFormAvatarWrapperStatic__YE9pe\">\n                                                <svg data-component=\"Octicon\" aria-hidden=\"true\" focusable=\"false\" class=\"octicon octicon-mark-github SessionsAuthHeader-module__avatarCoinGithub__n0H61\" viewBox=\"0 0 24 24\" width=\"48\" height=\"48\" fill=\"currentColor\" display=\"inline-block\" overflow=\"visible\" style=\"vertical-align:text-bottom\">\n                                                    <path d=\"M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943\"></path>\n                                                </svg>\n                                            </div>\n                                        </div>\n                                        <div class=\"SessionsAuthHeader-module__authFormHeaderContent__wtmqP\">\n                                            <h1 class=\"SessionsAuthHeader-module__authFormHeaderTitle__rVSNG\">Sign in to GitHub</h1>\n                                        </div>\n                                    </div>\n                                    <script type=\"application/json\" id=\"__PRIMER_DATA__R_0___\">{\"resolvedServerColorMode\":\"day\"}</script>\n                                </div>\n                            </react-partial>\n                        </div>\n                        <div class=\"authentication-body authentication-body--with-form new-session\">\n                            <div id=\"js-flash-container\" class=\"flash-container\" data-turbo-replace>\n                                <template class=\"js-flash-template\">\n                                    <div class=\"flash flash-full   {{ className }}\">\n                                        <div >\n                                            <button autofocus class=\"flash-close js-flash-close\" type=\"button\" aria-label=\"Dismiss this message\">\n                                                <svg aria-hidden=\"true\" data-component=\"Octicon\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-x\">\n                                                    <path d=\"M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z\"></path>\n                                                </svg>\n                                            </button>\n                                            <div aria-atomic=\"true\" role=\"alert\" class=\"js-flash-alert\">\n                                                <div>{{ message }}</div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </template>\n                            </div>\n                            <div class=\"flash js-transform-notice\" hidden>\n                                <button class=\"flash-close js-flash-close\" type=\"button\" aria-label=\"Dismiss this message\">\n                                    <svg aria-label=\"Dismiss\" role=\"img\" data-component=\"Octicon\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-x\">\n                                        <path d=\"M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z\"></path>\n                                    </svg>\n                                </button>\n                            </div>\n                            <!-- '\"` -->\n                            <!-- </textarea></xmp> -->\n                    </option>\n                </form>\n                <form data-turbo=\"false\" action=\"/session\" accept-charset=\"UTF-8\" method=\"post\">\n                    <input type=\"hidden\" data-csrf=\"true\" name=\"authenticity_token\" value=\"PHwoSED3k1AiQJo4rKfFi2fBL1r5kOOgwskmajNOt6uflETkwYnPv6R3FbwmgVkk0UHfJmU/F7bvaZU8XgojoQ==\" />\n                    <div>\n                        <input type=\"hidden\" name=\"add_account\" id=\"add_account\" autocomplete=\"off\" class=\"form-control\" />\n                        <label for=\"login_field\">\n      Username or email address\n    </label>\n                        <input type=\"text\" name=\"login\" id=\"login_field\" autocapitalize=\"off\" autocorrect=\"off\" autocomplete=\"username\" class=\"form-control  js-login-field\" autofocus=\"autofocus\" required=\"required\" />\n                    </div>\n                    <div class=\"position-relative\">\n                        <label for=\"password\">\n      Password\n    </label>\n                        <input type=\"password\" name=\"password\" id=\"password\" class=\"form-control form-control js-password-field\" autocomplete=\"current-password\" required=\"required\" />\n                        <a class=\"label-link position-absolute top-0 right-0\" id=\"forgot-password\" href=\"/password_reset\">Forgot password?</a>\n                        <input type=\"hidden\" name=\"webauthn-conditional\" value=\"undefined\">\n                        <input type=\"hidden\" class=\"js-support\" name=\"javascript-support\" value=\"unknown\">\n                        <input type=\"hidden\" class=\"js-webauthn-support\" name=\"webauthn-support\" value=\"unknown\">\n                        <input type=\"hidden\" class=\"js-webauthn-iuvpaa-support\" name=\"webauthn-iuvpaa-support\" value=\"unknown\">\n                        <input type=\"hidden\" name=\"return_to\" id=\"return_to\" value=\"/login/oauth/authorize?client_id=Ov23ctdXNzfUOissDT99%0A%0A\" autocomplete=\"off\" class=\"form-control\" />\n                        <input type=\"hidden\" name=\"allow_signup\" id=\"allow_signup\" autocomplete=\"off\" class=\"form-control\" />\n                        <input type=\"hidden\" name=\"client_id\" id=\"client_id\" value=\"Ov23ctdXNzfUOissDT99\n\n\" autocomplete=\"off\" class=\"form-control\" />\n                        <input type=\"hidden\" name=\"integration\" id=\"integration\" autocomplete=\"off\" class=\"form-control\" />\n                        <input class=\"form-control\" type=\"text\" name=\"required_field_aecc\" hidden=\"hidden\" />\n                        <input class=\"form-control\" type=\"hidden\" name=\"timestamp\" value=\"1782818118464\" />\n                        <input class=\"form-control\" type=\"hidden\" name=\"timestamp_secret\" value=\"2fd23e69934c15731c24cb2937955e69eb13cfa70c78bac040ecfdc430acc014\" />\n                    </div>\n                    <div>\n                        <input type=\"submit\" name=\"commit\" value=\"Sign in\" class=\"btn btn-primary btn-block js-sign-in-button\" data-disable-with=\"Signing in…\" data-signin-label=\"Sign in\" data-sso-label=\"Sign in with your identity provider\" development=\"false\" disable-emu-sso=\"false\" />\n                    </div>\n                </form>\n                <webauthn-status class=\"js-webauthn-login-emu-control\">\n                    <include-fragment data-target=\"webauthn-status.fragment\" data-src=\"/u2f/login_fragment?disable_signup=false&amp;is_emu_login=false&amp;mobile_ios=false&amp;return_to=%2Flogin%2Foauth%2Fauthorize%3Fclient_id%3DOv23ctdXNzfUOissDT99%250A%250A\" data-nonce=\"v2:6ccdae2f-b682-de68-3ee9-eb0411893832\" data-view-component=\"true\">\n                        <div data-show-on-forbidden-error hidden>\n                            <div class=\"Box\">\n                                <div class=\"blankslate-container\">\n                                    <div data-view-component=\"true\" class=\"blankslate blankslate-spacious color-bg-default rounded-2\">\n                                        <h3 data-view-component=\"true\" class=\"blankslate-heading\">        Uh oh!\n</h3>\n                                        <p data-view-component=\"true\" class=\"blankslate-description\">\n                                            <p class=\"color-fg-muted my-2 mb-2 ws-normal\">There was an error while loading. \n                                                <a class=\"Link--inTextBlock\" data-turbo=\"false\" href=\"\" aria-label=\"Please reload this page\">Please reload this page</a>.\n                                            </p>\n                                        </p>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </include-fragment>\n                </webauthn-status>\n            </div>\n            <div class=\"authentication-footer \">\n                <div class=\"authentication-login-footer-links\">\n                    <p class=\"mt-1 mb-0 p-0\">\n            New to GitHub?\n              \n                        <a data-ga-click=\"Sign in, switch to sign up\" data-hydro-click=\"{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;sign in switch to sign up&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/login?client_id=Ov23ctdXNzfUOissDT99%0A%0A&amp;return_to=%2Flogin%2Foauth%2Fauthorize%3Fclient_id%3DOv23ctdXNzfUOissDT99%250A%250A&quot;,&quot;user_id&quot;:null}}\" data-hydro-click-hmac=\"94bb3975d5385ad1b6a45ba91def6f3f39bed9b79b85522977c1e2a06c57499a\" href=\"/join?return_to=%2Flogin%2Foauth%2Fauthorize%3Fclient_id%3DOv23ctdXNzfUOissDT99%250A%250A&amp;source=oauth\">Create an account</a>\n                    </p>\n                </div>\n                <webauthn-subtle class=\"js-webauthn-subtle\" hidden>\n                    <p class=\"mb-0 mt-0 js-webauthn-subtle-emu-control\">\n                        <button data-action=\"click:webauthn-subtle#prompt\" type=\"button\" data-view-component=\"true\" class=\"Button--link Button--medium Button\">\n                            <span class=\"Button-content\">\n                                <span class=\"Button-label\">Sign in with a passkey</span>\n                            </span>\n                        </button>\n                    </p>\n                </webauthn-subtle>\n            </div>\n        </div>\n    </main>\n</div>\n<div class=\"footer-session-authentication\" role=\"contentinfo\">\n    <ul class=\"footer-session-authentication-links\">\n        <li>\n            <a data-analytics-event=\"{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}\" href=\"https://docs.github.com/site-policy/github-terms/github-terms-of-service\" data-view-component=\"true\" class=\"Link--secondary Link\">Terms</a>\n        </li>\n        <li>\n            <a data-analytics-event=\"{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}\" href=\"https://docs.github.com/site-policy/privacy-policies/github-privacy-statement\" data-view-component=\"true\" class=\"Link--secondary Link\">Privacy</a>\n        </li>\n        <li>\n            <a data-analytics-event=\"{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to docs&quot;,&quot;label&quot;:&quot;text:docs&quot;}\" href=\"https://docs.github.com\" data-view-component=\"true\" class=\"Link--secondary Link\">Docs</a>\n        </li>\n        <li>\n            <a data-analytics-event=\"{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}\" href=\"https://support.github.com\" data-view-component=\"true\" class=\"Link--secondary Link\">Contact GitHub Support</a>\n        </li>\n        <li class=\"mx-2\" >\n            <cookie-consent-link>\n                <button\n      type=\"button\"\n      class=\"Link--secondary underline-on-hover border-0 p-0 color-bg-transparent\"\n      data-action=\"click:cookie-consent-link#showConsentManagement\"\n      data-analytics-event=\"{&quot;location&quot;:&quot;footer&quot;,&quot;action&quot;:&quot;cookies&quot;,&quot;context&quot;:&quot;subfooter&quot;,&quot;tag&quot;:&quot;link&quot;,&quot;label&quot;:&quot;cookies_link_subfooter_footer&quot;}\"\n    >\n       Manage cookies\n    </button>\n            </cookie-consent-link>\n        </li>\n        <li class=\"mx-2\">\n            <cookie-consent-link>\n                <button\n      type=\"button\"\n      class=\"Link--secondary underline-on-hover border-0 p-0 color-bg-transparent text-left\"\n      data-action=\"click:cookie-consent-link#showConsentManagement\"\n      data-analytics-event=\"{&quot;location&quot;:&quot;footer&quot;,&quot;action&quot;:&quot;dont_share_info&quot;,&quot;context&quot;:&quot;subfooter&quot;,&quot;tag&quot;:&quot;link&quot;,&quot;label&quot;:&quot;dont_share_info_link_subfooter_footer&quot;}\"\n    >\n      Do not share my personal information\n    </button>\n            </cookie-consent-link>\n        </li>\n    </ul>\n</div>\n<ghcc-consent id=\"ghcc\" class=\"position-fixed bottom-0 left-0\" style=\"z-index: 999999\"\n      data-locale=\"en\"\n      data-initial-cookie-consent-allowed=\"\"\n      data-cookie-consent-required=\"false\"\n    ></ghcc-consent>\n<div id=\"ajax-error-message\" class=\"ajax-error-message flash flash-error\" hidden>\n    <svg aria-hidden=\"true\" data-component=\"Octicon\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-alert\">\n        <path d=\"M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z\"></path>\n    </svg>\n    <button type=\"button\" class=\"flash-close js-ajax-error-dismiss\" aria-label=\"Dismiss error\">\n        <svg aria-hidden=\"true\" data-component=\"Octicon\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-x\">\n            <path d=\"M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z\"></path>\n        </svg>\n    </button>\n    You can’t perform that action at this time.\n</div>\n<template id=\"site-details-dialog\">\n    <details class=\"details-reset details-overlay details-overlay-dark lh-default color-fg-default hx_rsm\" open>\n        <summary role=\"button\" aria-label=\"Close dialog\"></summary>\n        <details-dialog class=\"Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal\">\n            <button class=\"Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0\" type=\"button\" aria-label=\"Close dialog\" data-close-dialog>\n                <svg aria-hidden=\"true\" data-component=\"Octicon\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-x\">\n                    <path d=\"M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z\"></path>\n                </svg>\n            </button>\n            <div class=\"octocat-spinner tmp-my-6 js-details-dialog-spinner\"></div>\n        </details-dialog>\n    </details>\n</template>\n<div class=\"Popover js-hovercard-content position-absolute\" style=\"display: none; outline: none;\">\n    <div class=\"Popover-message Popover-message--bottom-left Popover-message--large Box color-shadow-large\" style=\"width:360px;\">\n  </div>\n</div>\n<template id=\"snippet-clipboard-copy-button\">\n    <div class=\"zeroclipboard-container position-absolute right-0 top-0\">\n        <clipboard-copy aria-label=\"Copy code to clipboard\" class=\"ClipboardButton btn js-clipboard-copy m-2 p-0\" data-copy-feedback=\"Copied!\" data-tooltip-direction=\"w\">\n            <svg aria-hidden=\"true\" data-component=\"Octicon\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-copy js-clipboard-copy-icon m-2 tmp-m-2\">\n                <path d=\"M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z\"></path>\n                <path d=\"M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z\"></path>\n            </svg>\n            <svg aria-hidden=\"true\" data-component=\"Octicon\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2 tmp-m-2\">\n                <path d=\"M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z\"></path>\n            </svg>\n        </clipboard-copy>\n    </div>\n</template>\n<template id=\"snippet-clipboard-copy-button-unpositioned\">\n    <div class=\"zeroclipboard-container\">\n        <clipboard-copy aria-label=\"Copy code to clipboard\" class=\"ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center\" data-copy-feedback=\"Copied!\" data-tooltip-direction=\"w\">\n            <svg aria-hidden=\"true\" data-component=\"Octicon\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-copy js-clipboard-copy-icon\">\n                <path d=\"M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z\"></path>\n                <path d=\"M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z\"></path>\n            </svg>\n            <svg aria-hidden=\"true\" data-component=\"Octicon\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-check js-clipboard-check-icon color-fg-success d-none\">\n                <path d=\"M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z\"></path>\n            </svg>\n        </clipboard-copy>\n    </div>\n</template>\n</div>\n<div id=\"js-global-screen-reader-notice\" class=\"sr-only mt-n1\" aria-live=\"polite\" aria-atomic=\"true\" ></div>\n<div id=\"js-global-screen-reader-notice-assertive\" class=\"sr-only mt-n1\" aria-live=\"assertive\" aria-atomic=\"true\"></div>\n</body>\n</html>\n<microsoft-analytics>\n  </microsoft-analytics>"
+            }
+          ]
+        },
+        {
+          "name": "POST 3 keys",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://github.com/login/oauth/access_token?client_id=Ov23ctdXNzfUOissDT99&client_secret=e706d063690a54b88c1d0f06a5e92a0daab2a7fe&code=a92180bbe6a9e5bae022",
+              "protocol": "https",
+              "host": [
+                "github",
+                "com"
+              ],
+              "path": [
+                "login",
+                "oauth",
+                "access_token"
+              ],
+              "query": [
+                {
+                  "key": "client_id",
+                  "value": "Ov23ctdXNzfUOissDT99"
+                },
+                {
+                  "key": "client_secret",
+                  "value": "e706d063690a54b88c1d0f06a5e92a0daab2a7fe"
+                },
+                {
+                  "key": "code",
+                  "value": "a92180bbe6a9e5bae022"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "POST 3 keys",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://github.com/login/oauth/access_token?client_id=Ov23ctdXNzfUOissDT99&client_secret=e706d063690a54b88c1d0f06a5e92a0daab2a7fe&code=a92180bbe6a9e5bae022",
+                  "protocol": "https",
+                  "host": [
+                    "github",
+                    "com"
+                  ],
+                  "path": [
+                    "login",
+                    "oauth",
+                    "access_token"
+                  ],
+                  "query": [
+                    {
+                      "key": "client_id",
+                      "value": "Ov23ctdXNzfUOissDT99"
+                    },
+                    {
+                      "key": "client_secret",
+                      "value": "e706d063690a54b88c1d0f06a5e92a0daab2a7fe"
+                    },
+                    {
+                      "key": "code",
+                      "value": "a92180bbe6a9e5bae022"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 30 Jun 2026 11:29:48 GMT"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/x-www-form-urlencoded; charset=utf-8"
+                },
+                {
+                  "key": "vary",
+                  "value": "X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With,Accept-Encoding, Accept, X-Requested-With"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"247b44249fccede96d6031934fdd6443\""
+                },
+                {
+                  "key": "cache-control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "set-cookie",
+                  "value": "last_write_ms=1782818988183; path=/; secure; HttpOnly; SameSite=Lax"
+                },
+                {
+                  "key": "strict-transport-security",
+                  "value": "max-age=31536000; includeSubdomains; preload"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "deny"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "0"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "content-security-policy",
+                  "value": "default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/"
+                },
+                {
+                  "key": "server",
+                  "value": "github.com"
+                },
+                {
+                  "key": "x-github-request-id",
+                  "value": "1912:301F52:858456:8D7693:6A43A89B"
+                }
+              ],
+              "cookie": [],
+              "body": "error=bad_verification_code&error_description=The+code+passed+is+incorrect+or+expired.&error_uri=https%3A%2F%2Fdocs.github.com%2Fapps%2Fmanaging-oauth-apps%2Ftroubleshooting-oauth-app-access-token-request-errors%2F%23bad-verification-code"
+            }
+          ]
+        },
+        {
+          "name": "GET use token",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Basic Authentication",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "password",
+              "type": "string"
+            },
+            {
+              "key": "{{auth_password_0p46}}",
+              "value": "{{auth_password_0p46}}",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "postman",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://postman-echo.com/basic-auth",
+          "protocol": "https",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "basic-auth"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Basic Authentication",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://postman-echo.com/basic-auth",
+              "protocol": "https",
+              "host": [
+                "postman-echo",
+                "com"
+              ],
+              "path": [
+                "basic-auth"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "date",
+              "value": "Tue, 30 Jun 2026 09:04:49 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "22"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"16-sJz8uwjdDv0wvm7//BYdNw8vMbU\""
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "set-cookie",
+              "value": "sails.sid=s%3AvsjPFj3jysyuWw4oDpJCuSKPzDpWrAYs.M6q4q6RpzTkFShxHDwj4%2FiLESjd3B2C0Hyznua921gc; Path=/; HttpOnly"
+            },
+            {
+              "key": "x-envoy-upstream-service-time",
+              "value": "5"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "cf-ray",
+              "value": "a13c01722953f27f-BOM"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"authenticated\": true\n}"
+        }
+      ]
+    },
+    {
+      "name": "Basic Auth",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "admin",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "admin",
+              "type": "string"
+            },
+            {
+              "key": "{{auth_password_0p46}}",
+              "value": "{{auth_password_0p46}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://the-internet.herokuapp.com/basic_auth",
+          "protocol": "http",
+          "host": [
+            "the-internet",
+            "herokuapp",
+            "com"
+          ],
+          "path": [
+            "basic_auth"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Digest Authorization",
+      "request": {
+        "auth": {
+          "type": "digest",
+          "digest": [
+            {
+              "key": "disableRetryRequest",
+              "value": false,
+              "type": "boolean"
+            },
+            {
+              "key": "password",
+              "value": "password",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "postman",
+              "type": "string"
+            },
+            {
+              "key": "algorithm",
+              "value": "MD5",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://postman-echo.com/digest-auth",
+          "protocol": "https",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "digest-auth"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "BearerTokenAPI_GitHub",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "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",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.github.com/user/repos",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "user",
+            "repos"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "BearerTokenAPI_GitHub",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.github.com/user/repos",
+              "protocol": "https",
+              "host": [
+                "api",
+                "github",
+                "com"
+              ],
+              "path": [
+                "user",
+                "repos"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "date",
+              "value": "Tue, 30 Jun 2026 09:27:42 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "cache-control",
+              "value": "private, max-age=60, s-maxage=60"
+            },
+            {
+              "key": "vary",
+              "value": "Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"1c38206e31f5c72098175284cdb9d534afbb5b748e7ee05c7d910683502cb1db\""
+            },
+            {
+              "key": "github-authentication-token-expiration",
+              "value": "2026-07-30 09:25:16 UTC"
+            },
+            {
+              "key": "x-github-media-type",
+              "value": "github.v3; format=json"
+            },
+            {
+              "key": "x-accepted-github-permissions",
+              "value": "metadata=read"
+            },
+            {
+              "key": "x-github-api-version-selected",
+              "value": "2022-11-28"
+            },
+            {
+              "key": "access-control-expose-headers",
+              "value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "strict-transport-security",
+              "value": "max-age=31536000; includeSubdomains; preload"
+            },
+            {
+              "key": "x-frame-options",
+              "value": "deny"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "key": "referrer-policy",
+              "value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+            },
+            {
+              "key": "content-security-policy",
+              "value": "default-src 'none'"
+            },
+            {
+              "key": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "server",
+              "value": "github.com"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "5000"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "4999"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1782815262"
+            },
+            {
+              "key": "x-ratelimit-used",
+              "value": "1"
+            },
+            {
+              "key": "x-ratelimit-resource",
+              "value": "core"
+            },
+            {
+              "key": "x-github-request-id",
+              "value": "3E00:17A9B8:3B1230:3D1BAB:6A438BF2"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1252305870,\n        \"node_id\": \"R_kgDOSqSrzg\",\n        \"name\": \"AI\",\n        \"full_name\": \"harishkamat01-design/AI\",\n        \"private\": false,\n        \"owner\": {\n            \"login\": \"harishkamat01-design\",\n            \"id\": 267583164,\n            \"node_id\": \"U_kgDOD_L-vA\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/267583164?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/harishkamat01-design\",\n            \"html_url\": \"https://github.com/harishkamat01-design\",\n            \"followers_url\": \"https://api.github.com/users/harishkamat01-design/followers\",\n            \"following_url\": \"https://api.github.com/users/harishkamat01-design/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/harishkamat01-design/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/harishkamat01-design/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/harishkamat01-design/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/harishkamat01-design/orgs\",\n            \"repos_url\": \"https://api.github.com/users/harishkamat01-design/repos\",\n            \"events_url\": \"https://api.github.com/users/harishkamat01-design/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/harishkamat01-design/received_events\",\n            \"type\": \"User\",\n            \"user_view_type\": \"public\",\n            \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/harishkamat01-design/AI\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/harishkamat01-design/AI\",\n        \"forks_url\": \"https://api.github.com/repos/harishkamat01-design/AI/forks\",\n        \"keys_url\": \"https://api.github.com/repos/harishkamat01-design/AI/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/harishkamat01-design/AI/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/harishkamat01-design/AI/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/harishkamat01-design/AI/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/harishkamat01-design/AI/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/harishkamat01-design/AI/events\",\n        \"assignees_url\": \"https://api.github.com/repos/harishkamat01-design/AI/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/harishkamat01-design/AI/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/harishkamat01-design/AI/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/harishkamat01-design/AI/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/harishkamat01-design/AI/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/harishkamat01-design/AI/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/harishkamat01-design/AI/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/harishkamat01-design/AI/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/harishkamat01-design/AI/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/harishkamat01-design/AI/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/harishkamat01-design/AI/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/harishkamat01-design/AI/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/harishkamat01-design/AI/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/harishkamat01-design/AI/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/harishkamat01-design/AI/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/harishkamat01-design/AI/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/harishkamat01-design/AI/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/harishkamat01-design/AI/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/harishkamat01-design/AI/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/harishkamat01-design/AI/merges\",\n        \"archive_url\": \"https://api.github.com/repos/harishkamat01-design/AI/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/harishkamat01-design/AI/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/harishkamat01-design/AI/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/harishkamat01-design/AI/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/harishkamat01-design/AI/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/harishkamat01-design/AI/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/harishkamat01-design/AI/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/harishkamat01-design/AI/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/harishkamat01-design/AI/deployments\",\n        \"created_at\": \"2026-05-28T11:45:06Z\",\n        \"updated_at\": \"2026-05-28T12:08:28Z\",\n        \"pushed_at\": \"2026-06-08T14:10:03Z\",\n        \"git_url\": \"git://github.com/harishkamat01-design/AI.git\",\n        \"ssh_url\": \"git@github.com:harishkamat01-design/AI.git\",\n        \"clone_url\": \"https://github.com/harishkamat01-design/AI.git\",\n        \"svn_url\": \"https://github.com/harishkamat01-design/AI\",\n        \"homepage\": null,\n        \"size\": 508,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": \"HTML\",\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": true,\n        \"has_pages\": false,\n        \"has_discussions\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 0,\n        \"license\": null,\n        \"allow_forking\": true,\n        \"is_template\": false,\n        \"web_commit_signoff_required\": false,\n        \"has_pull_requests\": true,\n        \"pull_request_creation_policy\": \"all\",\n        \"topics\": [],\n        \"visibility\": \"public\",\n        \"forks\": 0,\n        \"open_issues\": 0,\n        \"watchers\": 0,\n        \"default_branch\": \"master\",\n        \"permissions\": {\n            \"admin\": true,\n            \"maintain\": true,\n            \"push\": true,\n            \"triage\": true,\n            \"pull\": true\n        }\n    },\n    {\n        \"id\": 1263095628,\n        \"node_id\": \"R_kgDOS0lPTA\",\n        \"name\": \"AIQA\",\n        \"full_name\": \"harishkamat01-design/AIQA\",\n        \"private\": false,\n        \"owner\": {\n            \"login\": \"harishkamat01-design\",\n            \"id\": 267583164,\n            \"node_id\": \"U_kgDOD_L-vA\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/267583164?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/harishkamat01-design\",\n            \"html_url\": \"https://github.com/harishkamat01-design\",\n            \"followers_url\": \"https://api.github.com/users/harishkamat01-design/followers\",\n            \"following_url\": \"https://api.github.com/users/harishkamat01-design/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/harishkamat01-design/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/harishkamat01-design/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/harishkamat01-design/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/harishkamat01-design/orgs\",\n            \"repos_url\": \"https://api.github.com/users/harishkamat01-design/repos\",\n            \"events_url\": \"https://api.github.com/users/harishkamat01-design/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/harishkamat01-design/received_events\",\n            \"type\": \"User\",\n            \"user_view_type\": \"public\",\n            \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/harishkamat01-design/AIQA\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/harishkamat01-design/AIQA\",\n        \"forks_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/forks\",\n        \"keys_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/events\",\n        \"assignees_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/merges\",\n        \"archive_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/harishkamat01-design/AIQA/deployments\",\n        \"created_at\": \"2026-06-08T16:05:55Z\",\n        \"updated_at\": \"2026-06-28T07:47:46Z\",\n        \"pushed_at\": \"2026-06-28T07:47:42Z\",\n        \"git_url\": \"git://github.com/harishkamat01-design/AIQA.git\",\n        \"ssh_url\": \"git@github.com:harishkamat01-design/AIQA.git\",\n        \"clone_url\": \"https://github.com/harishkamat01-design/AIQA.git\",\n        \"svn_url\": \"https://github.com/harishkamat01-design/AIQA\",\n        \"homepage\": null,\n        \"size\": 11129,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": \"HTML\",\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": true,\n        \"has_pages\": false,\n        \"has_discussions\": false,\n        \"forks_count\": 1,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 0,\n        \"license\": null,\n        \"allow_forking\": true,\n        \"is_template\": false,\n        \"web_commit_signoff_required\": false,\n        \"has_pull_requests\": true,\n        \"pull_request_creation_policy\": \"all\",\n        \"topics\": [],\n        \"visibility\": \"public\",\n        \"forks\": 1,\n        \"open_issues\": 0,\n        \"watchers\": 0,\n        \"default_branch\": \"master\",\n        \"permissions\": {\n            \"admin\": true,\n            \"maintain\": true,\n            \"push\": true,\n            \"triage\": true,\n            \"pull\": true\n        }\n    },\n    {\n        \"id\": 1263035415,\n        \"node_id\": \"R_kgDOS0hkFw\",\n        \"name\": \"AI_Projects\",\n        \"full_name\": \"harishkamat01-design/AI_Projects\",\n        \"private\": false,\n        \"owner\": {\n            \"login\": \"harishkamat01-design\",\n            \"id\": 267583164,\n            \"node_id\": \"U_kgDOD_L-vA\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/267583164?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/harishkamat01-design\",\n            \"html_url\": \"https://github.com/harishkamat01-design\",\n            \"followers_url\": \"https://api.github.com/users/harishkamat01-design/followers\",\n            \"following_url\": \"https://api.github.com/users/harishkamat01-design/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/harishkamat01-design/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/harishkamat01-design/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/harishkamat01-design/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/harishkamat01-design/orgs\",\n            \"repos_url\": \"https://api.github.com/users/harishkamat01-design/repos\",\n            \"events_url\": \"https://api.github.com/users/harishkamat01-design/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/harishkamat01-design/received_events\",\n            \"type\": \"User\",\n            \"user_view_type\": \"public\",\n            \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/harishkamat01-design/AI_Projects\",\n        \"description\": \"AI Projects will be created depending on the task \",\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects\",\n        \"forks_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/forks\",\n        \"keys_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/events\",\n        \"assignees_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/merges\",\n        \"archive_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/harishkamat01-design/AI_Projects/deployments\",\n        \"created_at\": \"2026-06-08T14:59:36Z\",\n        \"updated_at\": \"2026-06-15T11:14:38Z\",\n        \"pushed_at\": \"2026-06-15T11:14:34Z\",\n        \"git_url\": \"git://github.com/harishkamat01-design/AI_Projects.git\",\n        \"ssh_url\": \"git@github.com:harishkamat01-design/AI_Projects.git\",\n        \"clone_url\": \"https://github.com/harishkamat01-design/AI_Projects.git\",\n        \"svn_url\": \"https://github.com/harishkamat01-design/AI_Projects\",\n        \"homepage\": null,\n        \"size\": 62,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": \"JavaScript\",\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": true,\n        \"has_pages\": false,\n        \"has_discussions\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 0,\n        \"license\": null,\n        \"allow_forking\": true,\n        \"is_template\": false,\n        \"web_commit_signoff_required\": false,\n        \"has_pull_requests\": true,\n        \"pull_request_creation_policy\": \"all\",\n        \"topics\": [],\n        \"visibility\": \"public\",\n        \"forks\": 0,\n        \"open_issues\": 0,\n        \"watchers\": 0,\n        \"default_branch\": \"master\",\n        \"permissions\": {\n            \"admin\": true,\n            \"maintain\": true,\n            \"push\": true,\n            \"triage\": true,\n            \"pull\": true\n        }\n    },\n    {\n        \"id\": 1179720570,\n        \"node_id\": \"R_kgDORlEbeg\",\n        \"name\": \"OpencartV1356\",\n        \"full_name\": \"harishkamat01-design/OpencartV1356\",\n        \"private\": false,\n        \"owner\": {\n            \"login\": \"harishkamat01-design\",\n            \"id\": 267583164,\n            \"node_id\": \"U_kgDOD_L-vA\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/267583164?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/harishkamat01-design\",\n            \"html_url\": \"https://github.com/harishkamat01-design\",\n            \"followers_url\": \"https://api.github.com/users/harishkamat01-design/followers\",\n            \"following_url\": \"https://api.github.com/users/harishkamat01-design/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/harishkamat01-design/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/harishkamat01-design/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/harishkamat01-design/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/harishkamat01-design/orgs\",\n            \"repos_url\": \"https://api.github.com/users/harishkamat01-design/repos\",\n            \"events_url\": \"https://api.github.com/users/harishkamat01-design/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/harishkamat01-design/received_events\",\n            \"type\": \"User\",\n            \"user_view_type\": \"public\",\n            \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/harishkamat01-design/OpencartV1356\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356\",\n        \"forks_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/forks\",\n        \"keys_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/events\",\n        \"assignees_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/merges\",\n        \"archive_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/harishkamat01-design/OpencartV1356/deployments\",\n        \"created_at\": \"2026-03-12T10:06:36Z\",\n        \"updated_at\": \"2026-05-16T05:59:10Z\",\n        \"pushed_at\": \"2026-05-16T05:59:06Z\",\n        \"git_url\": \"git://github.com/harishkamat01-design/OpencartV1356.git\",\n        \"ssh_url\": \"git@github.com:harishkamat01-design/OpencartV1356.git\",\n        \"clone_url\": \"https://github.com/harishkamat01-design/OpencartV1356.git\",\n        \"svn_url\": \"https://github.com/harishkamat01-design/OpencartV1356\",\n        \"homepage\": null,\n        \"size\": 4102,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": \"HTML\",\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": true,\n        \"has_pages\": false,\n        \"has_discussions\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 0,\n        \"license\": null,\n        \"allow_forking\": true,\n        \"is_template\": false,\n        \"web_commit_signoff_required\": false,\n        \"has_pull_requests\": true,\n        \"pull_request_creation_policy\": \"all\",\n        \"topics\": [],\n        \"visibility\": \"public\",\n        \"forks\": 0,\n        \"open_issues\": 0,\n        \"watchers\": 0,\n        \"default_branch\": \"master\",\n        \"permissions\": {\n            \"admin\": true,\n            \"maintain\": true,\n            \"push\": true,\n            \"triage\": true,\n            \"pull\": true\n        }\n    },\n    {\n        \"id\": 1239725179,\n        \"node_id\": \"R_kgDOSeS0ew\",\n        \"name\": \"seleniumwebdriver\",\n        \"full_name\": \"harishkamat01-design/seleniumwebdriver\",\n        \"private\": false,\n        \"owner\": {\n            \"login\": \"harishkamat01-design\",\n            \"id\": 267583164,\n            \"node_id\": \"U_kgDOD_L-vA\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/267583164?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/harishkamat01-design\",\n            \"html_url\": \"https://github.com/harishkamat01-design\",\n            \"followers_url\": \"https://api.github.com/users/harishkamat01-design/followers\",\n            \"following_url\": \"https://api.github.com/users/harishkamat01-design/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/harishkamat01-design/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/harishkamat01-design/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/harishkamat01-design/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/harishkamat01-design/orgs\",\n            \"repos_url\": \"https://api.github.com/users/harishkamat01-design/repos\",\n            \"events_url\": \"https://api.github.com/users/harishkamat01-design/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/harishkamat01-design/received_events\",\n            \"type\": \"User\",\n            \"user_view_type\": \"public\",\n            \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/harishkamat01-design/seleniumwebdriver\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver\",\n        \"forks_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/forks\",\n        \"keys_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/events\",\n        \"assignees_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/merges\",\n        \"archive_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/harishkamat01-design/seleniumwebdriver/deployments\",\n        \"created_at\": \"2026-05-15T11:28:55Z\",\n        \"updated_at\": \"2026-05-15T11:50:45Z\",\n        \"pushed_at\": \"2026-05-15T11:50:40Z\",\n        \"git_url\": \"git://github.com/harishkamat01-design/seleniumwebdriver.git\",\n        \"ssh_url\": \"git@github.com:harishkamat01-design/seleniumwebdriver.git\",\n        \"clone_url\": \"https://github.com/harishkamat01-design/seleniumwebdriver.git\",\n        \"svn_url\": \"https://github.com/harishkamat01-design/seleniumwebdriver\",\n        \"homepage\": null,\n        \"size\": 326,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": \"Java\",\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": true,\n        \"has_pages\": false,\n        \"has_discussions\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 0,\n        \"license\": null,\n        \"allow_forking\": true,\n        \"is_template\": false,\n        \"web_commit_signoff_required\": false,\n        \"has_pull_requests\": true,\n        \"pull_request_creation_policy\": \"all\",\n        \"topics\": [],\n        \"visibility\": \"public\",\n        \"forks\": 0,\n        \"open_issues\": 0,\n        \"watchers\": 0,\n        \"default_branch\": \"master\",\n        \"permissions\": {\n            \"admin\": true,\n            \"maintain\": true,\n            \"push\": true,\n            \"triage\": true,\n            \"pull\": true\n        }\n    },\n    {\n        \"id\": 1276783084,\n        \"node_id\": \"R_kgDOTBop7A\",\n        \"name\": \"SKCP\",\n        \"full_name\": \"harishkamat01-design/SKCP\",\n        \"private\": false,\n        \"owner\": {\n            \"login\": \"harishkamat01-design\",\n            \"id\": 267583164,\n            \"node_id\": \"U_kgDOD_L-vA\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/267583164?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/harishkamat01-design\",\n            \"html_url\": \"https://github.com/harishkamat01-design\",\n            \"followers_url\": \"https://api.github.com/users/harishkamat01-design/followers\",\n            \"following_url\": \"https://api.github.com/users/harishkamat01-design/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/harishkamat01-design/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/harishkamat01-design/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/harishkamat01-design/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/harishkamat01-design/orgs\",\n            \"repos_url\": \"https://api.github.com/users/harishkamat01-design/repos\",\n            \"events_url\": \"https://api.github.com/users/harishkamat01-design/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/harishkamat01-design/received_events\",\n            \"type\": \"User\",\n            \"user_view_type\": \"public\",\n            \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/harishkamat01-design/SKCP\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/harishkamat01-design/SKCP\",\n        \"forks_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/forks\",\n        \"keys_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/events\",\n        \"assignees_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/merges\",\n        \"archive_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/harishkamat01-design/SKCP/deployments\",\n        \"created_at\": \"2026-06-22T09:35:44Z\",\n        \"updated_at\": \"2026-06-22T09:35:45Z\",\n        \"pushed_at\": \"2026-06-22T09:35:45Z\",\n        \"git_url\": \"git://github.com/harishkamat01-design/SKCP.git\",\n        \"ssh_url\": \"git@github.com:harishkamat01-design/SKCP.git\",\n        \"clone_url\": \"https://github.com/harishkamat01-design/SKCP.git\",\n        \"svn_url\": \"https://github.com/harishkamat01-design/SKCP\",\n        \"homepage\": null,\n        \"size\": 0,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": null,\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": true,\n        \"has_pages\": false,\n        \"has_discussions\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 0,\n        \"license\": null,\n        \"allow_forking\": true,\n        \"is_template\": false,\n        \"web_commit_signoff_required\": false,\n        \"has_pull_requests\": true,\n        \"pull_request_creation_policy\": \"all\",\n        \"topics\": [],\n        \"visibility\": \"public\",\n        \"forks\": 0,\n        \"open_issues\": 0,\n        \"watchers\": 0,\n        \"default_branch\": \"main\",\n        \"permissions\": {\n            \"admin\": true,\n            \"maintain\": true,\n            \"push\": true,\n            \"triage\": true,\n            \"pull\": true\n        }\n    },\n    {\n        \"id\": 1252197151,\n        \"node_id\": \"R_kgDOSqMDHw\",\n        \"name\": \"TestPlan-created-with-VS-Code\",\n        \"full_name\": \"harishkamat01-design/TestPlan-created-with-VS-Code\",\n        \"private\": false,\n        \"owner\": {\n            \"login\": \"harishkamat01-design\",\n            \"id\": 267583164,\n            \"node_id\": \"U_kgDOD_L-vA\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/267583164?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/harishkamat01-design\",\n            \"html_url\": \"https://github.com/harishkamat01-design\",\n            \"followers_url\": \"https://api.github.com/users/harishkamat01-design/followers\",\n            \"following_url\": \"https://api.github.com/users/harishkamat01-design/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/harishkamat01-design/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/harishkamat01-design/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/harishkamat01-design/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/harishkamat01-design/orgs\",\n            \"repos_url\": \"https://api.github.com/users/harishkamat01-design/repos\",\n            \"events_url\": \"https://api.github.com/users/harishkamat01-design/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/harishkamat01-design/received_events\",\n            \"type\": \"User\",\n            \"user_view_type\": \"public\",\n            \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/harishkamat01-design/TestPlan-created-with-VS-Code\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code\",\n        \"forks_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/forks\",\n        \"keys_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/events\",\n        \"assignees_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/merges\",\n        \"archive_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/harishkamat01-design/TestPlan-created-with-VS-Code/deployments\",\n        \"created_at\": \"2026-05-28T09:30:04Z\",\n        \"updated_at\": \"2026-05-28T09:35:48Z\",\n        \"pushed_at\": \"2026-05-28T09:35:43Z\",\n        \"git_url\": \"git://github.com/harishkamat01-design/TestPlan-created-with-VS-Code.git\",\n        \"ssh_url\": \"git@github.com:harishkamat01-design/TestPlan-created-with-VS-Code.git\",\n        \"clone_url\": \"https://github.com/harishkamat01-design/TestPlan-created-with-VS-Code.git\",\n        \"svn_url\": \"https://github.com/harishkamat01-design/TestPlan-created-with-VS-Code\",\n        \"homepage\": null,\n        \"size\": 35,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": null,\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": true,\n        \"has_pages\": false,\n        \"has_discussions\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 0,\n        \"license\": null,\n        \"allow_forking\": true,\n        \"is_template\": false,\n        \"web_commit_signoff_required\": false,\n        \"has_pull_requests\": true,\n        \"pull_request_creation_policy\": \"all\",\n        \"topics\": [],\n        \"visibility\": \"public\",\n        \"forks\": 0,\n        \"open_issues\": 0,\n        \"watchers\": 0,\n        \"default_branch\": \"master\",\n        \"permissions\": {\n            \"admin\": true,\n            \"maintain\": true,\n            \"push\": true,\n            \"triage\": true,\n            \"pull\": true\n        }\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}

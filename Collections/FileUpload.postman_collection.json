@@ -1,0 +1,99 @@
+{
+  "info": {
+    "_postman_id": "3b40c833-9032-480b-a0a8-d21da4710d1e",
+    "name": "FileUpload",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "3390971",
+    "_collection_link": "https://go.postman.co/collection/3390971-3b40c833-9032-480b-a0a8-d21da4710d1e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "SingleFileUpload",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "uuid": "03bcc1c5-40f5-4888-aa6d-592b3838792e",
+              "src": "postman-cloud:///1f179b11-90ed-4210-aeac-8161207a93f1"
+            },
+            {
+              "key": "",
+              "value": "",
+              "type": "text",
+              "uuid": "6be6ca1a-bbc4-4462-8c67-47a940437cb5"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/uploadFile",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "uploadFile"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "SingleFileUpload",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "uuid": "03bcc1c5-40f5-4888-aa6d-592b3838792e",
+                  "src": "/C:/Users/hpk13/Downloads/All things on Selenium and Git and API/API Testing/API Automation RestAssured tool/test.txt"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8080/uploadFile",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "uploadFile"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 07 Jul 2026 01:53:30 GMT"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"fileName\": \"test.txt\",\n    \"fileDownloadUri\": \"http://localhost:8080/downloadFile/test.txt\",\n    \"fileType\": \"text/plain\",\n    \"size\": 0\n}"
+        }
+      ]
+    }
+  ]
+}
